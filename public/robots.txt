@@ -1,0 +1,6 @@
+# Allow search engine crawlers to index all public pages
+User-agent: *
+Allow: /
+
+# Reference to the site's XML sitemap
+Sitemap: /sitemap.xml
