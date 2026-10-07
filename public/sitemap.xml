@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  NOTE: Production domain is not yet configured.
+  Before submitting to search engines upon deployment, update <loc> entries to full production URLs:
+  e.g., https://<YOUR_PRODUCTION_DOMAIN>/
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/</loc>

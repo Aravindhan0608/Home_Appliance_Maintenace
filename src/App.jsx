@@ -333,19 +333,19 @@ export default function App() {
     }
 
     const metaDescriptions = {
-      "/": "Expert doorstep repair and maintenance for washing machines, refrigerators, ACs, microwaves, dishwashers, geysers, TVs, and more. Genuine spare parts & trusted care.",
-      "/services": "Explore doorstep service options for washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, TVs, and home appliances.",
-      "/about": "Learn about Service Hub's dedicated approach to home appliance repair, genuine parts replacement, and dependable doorstep maintenance service.",
-      "/why-us": "Discover why customers choose Service Hub for clear diagnostics, doorstep convenience, honest communication, and customer-focused appliance care.",
-      "/contact": "Request doorstep home appliance repair or maintenance. Send an enquiry directly on WhatsApp or call our service desk at 8870657575.",
+      "/": "Service Hub provides multibrand home appliance sales and repair services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
+      "/services": "Explore home appliance repair and service options from Service Hub for washing machines, refrigerators, ACs, microwave ovens, dishwashers, geysers, TVs and other appliances.",
+      "/about": "Learn about Service Hub, a multibrand home appliance sales and service business serving Mettupalayam and nearby areas in Tamil Nadu.",
+      "/why-us": "Choose Service Hub for professional home appliance repair and service support across Mettupalayam, Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
+      "/contact": "Contact Service Hub for home appliance repair and service enquiries in Mettupalayam and nearby areas. Call 8870657575.",
     };
 
     const pageTitles = {
-      "/": "Home Appliance Maintenance & Repair Services | Service Hub",
-      "/services": "Our Appliance Repair Services | Service Hub",
-      "/about": "About Us | Service Hub Appliance Care",
-      "/why-us": "Why Choose Service Hub | Reliable Appliance Service",
-      "/contact": "Contact Us & Book Service | Service Hub",
+      "/": "Service Hub | Home Appliance Sales & Repair Service",
+      "/services": "Home Appliance Repair Services in Mettupalayam | Service Hub",
+      "/about": "About Service Hub | Home Appliance Service in Mettupalayam",
+      "/why-us": "Why Choose Service Hub | Home Appliance Repair Service",
+      "/contact": "Contact Service Hub | Home Appliance Repair Service",
     };
 
     const normalized =
@@ -353,18 +353,28 @@ export default function App() {
         ? currentPath.slice(0, -1)
         : currentPath;
 
-    document.title = pageTitles[normalized] || "Page Not Found | Service Hub";
+    const pageTitle = pageTitles[normalized] || "Page Not Found | Service Hub";
+    document.title = pageTitle;
 
     const descContent =
       metaDescriptions[normalized] ||
-      "The requested page could not be found. Return to Service Hub home or explore our appliance repair services.";
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.setAttribute("name", "description");
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute("content", descContent);
+      "Page not found. Return to Service Hub for home appliance sales and repair services.";
+
+    const updateMetaTag = (attribute, name, content) => {
+      let tag = document.querySelector(`meta[${attribute}="${name}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute(attribute, name);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
+
+    updateMetaTag("name", "description", descContent);
+    updateMetaTag("property", "og:title", pageTitle);
+    updateMetaTag("property", "og:description", descContent);
+    updateMetaTag("name", "twitter:title", pageTitle);
+    updateMetaTag("name", "twitter:description", descContent);
   }, [currentPath]);
 
   const isHomePage = currentPath === "/" || currentPath === "";

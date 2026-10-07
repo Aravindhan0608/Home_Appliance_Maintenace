@@ -37,7 +37,7 @@ export default function Navbar() {
           aria-label="Service Hub Home"
         >
           <img
-            src="/assets/logo.png"
+            src="/assets/logo.jpeg"
             alt="Service Hub"
             className="h-[82px] w-[82px] object-contain sm:h-[88px] sm:w-[88px]"
           />

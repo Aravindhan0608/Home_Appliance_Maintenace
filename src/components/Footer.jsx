@@ -30,9 +30,9 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/logo.png"
+                src="/assets/logo.jpeg"
                 alt="Service Hub"
-                className="h-14 w-14 rounded-full object-contain"
+                className="h-14 w-14 rounded-full object-cover"
               />
               <div>
                 <span className="font-serif text-xl font-bold tracking-tight text-white">
