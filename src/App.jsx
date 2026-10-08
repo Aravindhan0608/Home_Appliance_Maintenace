@@ -418,7 +418,7 @@ export default function App() {
         {/* Hero background image */}
         <div className="absolute right-0 top-[104px] h-[430px] w-full overflow-hidden lg:h-[535px] lg:w-[58%]">
           <img
-            src="/assets/washing-machine-hero.jpg"
+            src="/assets/washing-machine-hero.webp"
             alt="Home appliance maintenance and repair service"
             loading="eager"
             fetchPriority="high"

@@ -98,7 +98,7 @@ export default function About() {
               <div className="relative h-full overflow-hidden rounded-2xl border border-[#314a6c] bg-[#0a2145] p-2 shadow-2xl">
                 <div className="overflow-hidden rounded-xl h-full">
                   <img
-                    src="/about.png"
+                    src="/about.webp"
                     alt="Service Hub dedicated service team"
                     loading="eager"
                     fetchPriority="high"

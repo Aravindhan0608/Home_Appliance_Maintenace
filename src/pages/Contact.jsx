@@ -240,6 +240,29 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                   </svg>
                 </a>
 
+                {/* Physical Business Address */}
+                <div className="mt-4 rounded-xl border border-[#314a6c] bg-[#061a3a] p-4 transition duration-200 hover:border-[#eeb52a]/60">
+                  <div className="flex items-start gap-3">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eeb52a]/15 text-[#f4b82b]">
+                      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-white/60">
+                        Physical Business Address
+                      </p>
+                      <address className="mt-1 text-xs not-italic leading-5 text-white/90 sm:text-sm">
+                        516 A, Rajiv Gandhi Nagar,<br />
+                        Karamadai Road,<br />
+                        Mettupalayam,<br />
+                        Tamil Nadu - 641301, India
+                      </address>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Service Coverage Note */}
                 <div className="mt-6 border-t border-[#314a6c]/60 pt-5">
                   <p className="text-xs font-semibold uppercase tracking-wider text-white/80">

@@ -157,6 +157,15 @@ export default function Footer() {
                   8870657575
                 </a>
               </p>
+              <div className="flex items-start gap-2 pt-1">
+                <span className="text-[#f4b82b] shrink-0">Address:</span>
+                <address className="not-italic leading-5 text-white/70">
+                  516 A, Rajiv Gandhi Nagar,<br />
+                  Karamadai Road,<br />
+                  Mettupalayam,<br />
+                  Tamil Nadu - 641301, India
+                </address>
+              </div>
             </div>
 
             <div className="mt-5">
