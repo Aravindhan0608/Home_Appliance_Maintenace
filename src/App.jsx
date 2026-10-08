@@ -337,7 +337,7 @@ export default function App() {
       "/services": "Explore home appliance repair and service options from Service Hub for washing machines, refrigerators, ACs, microwave ovens, dishwashers, geysers, TVs and other appliances.",
       "/about": "Learn about Service Hub, a multibrand home appliance sales and service business serving Mettupalayam and nearby areas in Tamil Nadu.",
       "/why-us": "Choose Service Hub for professional home appliance repair and service support across Mettupalayam, Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/contact": "Contact Service Hub for home appliance repair and service enquiries in Mettupalayam and nearby areas. Call 8870657575.",
+      "/contact": "Contact Service Hub for home appliance repair and service enquiries in Mettupalayam and nearby areas. Call 918870657575.",
     };
 
     const pageTitles = {
@@ -407,397 +407,397 @@ export default function App() {
         ) : !isKnownRoute ? (
           <NotFound />
         ) : (
-        <>
-          {/* ================= HERO ================= */}
-          <section
+          <>
+            {/* ================= HERO ================= */}
+            <section
 
 
-        id="home"
-        className="relative min-h-[680px] overflow-hidden bg-[#061a3a] pt-[104px] lg:min-h-[640px]"
-      >
-        {/* Hero background image */}
-        <div className="absolute right-0 top-[104px] h-[430px] w-full overflow-hidden lg:h-[535px] lg:w-[58%]">
-          <img
-            src="/assets/washing-machine-hero.webp"
-            alt="Home appliance maintenance and repair service"
-            loading="eager"
-            fetchPriority="high"
-            className="h-full w-full object-cover object-center"
-          />
-
-          {/* Dark gradient over image */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#061a3a] via-[#061a3a]/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#061a3a]/30 to-transparent" />
-
-          {/* Gold curved accent */}
-          <div className="absolute -left-[210px] top-[5px] hidden h-[600px] w-[600px] rounded-full border-[5px] border-[#eeb52a] lg:block pointer-events-none" />
-        </div>
-
-        <div className="relative z-10 mx-auto flex max-w-[1400px] flex-col px-6 sm:px-10 lg:min-h-[535px] lg:px-10">
-          <div className="w-full pt-8 sm:pt-12 lg:w-[52%] lg:pt-[88px]">
-            {/* Small heading */}
-            <p className="mb-2 text-[19px] font-semibold tracking-wide text-[#f4b82b] sm:text-[23px]">
-              HOME APPLIANCE
-            </p>
-
-            {/* Main heading */}
-            <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
-              SERVICE &amp; REPAIR
-            </h1>
-
-            {/* Subtitle */}
-            <p className="mt-3 text-[18px] font-semibold uppercase tracking-wide text-[#f4b82b] sm:text-[21px]">
-              FAST. RELIABLE. AFFORDABLE.
-            </p>
-
-            <div className="mt-4 h-[3px] w-[62px] bg-[#f4b82b]" />
-
-            {/* Description */}
-            <p className="mt-5 max-w-[535px] text-[14px] leading-6 text-white/90 sm:text-[16px] sm:leading-7">
-              We provide expert repair and maintenance services for washing
-              machines, refrigerators, air conditioners, microwaves,
-              dishwashers, water heaters, TVs, and other household appliances.
-              Doorstep service with genuine spare parts and professional care.
-            </p>
-
-            {/* Feature icons */}
-            <div className="mt-7 grid max-w-[610px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
-              <FeatureItem icon={<ShieldIcon />}>
-                EXPERT
-                <br />
-                TECHNICIANS
-              </FeatureItem>
-
-              <FeatureItem icon={<GenuineIcon />}>
-                GENUINE
-                <br />
-                SPARE PARTS
-              </FeatureItem>
-
-              <FeatureItem icon={<HomeServiceIcon />}>
-                DOORSTEP
-                <br />
-                SERVICE
-              </FeatureItem>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href="/services"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateTo("/services");
-                }}
-                className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-[#f7c23c] to-[#eaaa1e] px-7 py-3.5 text-[14px] font-bold uppercase tracking-wide text-[#071a39] shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-[#f0b52a]/20 sm:text-[15px]"
-              >
-                Explore Services
-              </a>
-
-              <a
-                href="/contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateTo("/contact");
-                }}
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-[#eeb52a]/60 px-7 py-3.5 text-[14px] font-semibold text-[#f4b82b] transition hover:border-[#eeb52a] hover:bg-[#eeb52a]/10 sm:text-[15px]"
-              >
-                <CalendarIcon />
-                <span>Book a Service</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= SERVICES DISCOVERY ================= */}
-      <section
-        id="services"
-        className="relative bg-[#061a3a] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
-      >
-        <div className="mx-auto max-w-[1380px]">
-          {/* Asymmetric Header */}
-          <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end sm:mb-12">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                Appliance Care &amp; Repair
-              </span>
-              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Our Appliance Services
-              </h2>
-              <div className="mt-3.5 h-[3px] w-12 bg-[#eeb52a]" />
-            </div>
-            <a
-              href="/services"
-              onClick={(e) => {
-                e.preventDefault();
-                navigateTo("/services");
-              }}
-              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:text-[#ffd666]"
+              id="home"
+              className="relative min-h-[680px] overflow-hidden bg-[#061a3a] pt-[104px] lg:min-h-[640px]"
             >
-              <span>Explore All 8 Categories</span>
-              <ArrowIcon />
-            </a>
-          </div>
+              {/* Hero background image */}
+              <div className="absolute right-0 top-[104px] h-[430px] w-full overflow-hidden lg:h-[535px] lg:w-[58%]">
+                <img
+                  src="/assets/washing-machine-hero.webp"
+                  alt="Home appliance maintenance and repair service"
+                  loading="eager"
+                  fetchPriority="high"
+                  className="h-full w-full object-cover object-center"
+                />
 
-          {/* Service discovery cards */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((service) => (
-              <a
-                key={service.title + service.title2}
-                href="/services"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateTo("/services");
-                }}
-                className="group flex min-h-[210px] flex-col justify-between rounded-xl border border-[#314a6c] bg-[#0a2145]/50 p-5 text-left transition duration-300 hover:-translate-y-1 hover:border-[#eeb52a] hover:bg-[#0d284f]"
-              >
-                <div>
-                  <div className="mb-3.5 flex h-12 w-12 items-center justify-center rounded-lg bg-[#061a3a] text-[#f4b82b] transition duration-300 group-hover:scale-105 group-hover:border group-hover:border-[#eeb52a]/40">
-                    <ServiceIcon type={service.icon} />
-                  </div>
+                {/* Dark gradient over image */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#061a3a] via-[#061a3a]/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#061a3a]/30 to-transparent" />
 
-                  <h3 className="text-sm font-bold leading-5 text-white transition group-hover:text-[#f4b82b]">
-                    {service.title} {service.title2}
-                  </h3>
+                {/* Gold curved accent */}
+                <div className="absolute -left-[210px] top-[5px] hidden h-[600px] w-[600px] rounded-full border-[5px] border-[#eeb52a] lg:block pointer-events-none" />
+              </div>
 
-                  <p className="mt-2 text-xs leading-5 text-white/75">
-                    {service.description}
+              <div className="relative z-10 mx-auto flex max-w-[1400px] flex-col px-6 sm:px-10 lg:min-h-[535px] lg:px-10">
+                <div className="w-full pt-8 sm:pt-12 lg:w-[52%] lg:pt-[88px]">
+                  {/* Small heading */}
+                  <p className="mb-2 text-[19px] font-semibold tracking-wide text-[#f4b82b] sm:text-[23px]">
+                    HOME APPLIANCE
                   </p>
-                </div>
 
-                <div className="mt-4 flex items-center gap-1.5 pt-3 border-t border-[#314a6c]/40 text-xs font-semibold text-[#f4b82b]/80 group-hover:text-[#f4b82b]">
-                  <span>View Details</span>
-                  <ArrowIcon />
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+                  {/* Main heading */}
+                  <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
+                    SERVICE &amp; REPAIR
+                  </h1>
 
-      {/* ================= WHY CHOOSE US (Asymmetric Highlight Split) ================= */}
-      <section
-        id="why-us"
-        className="relative bg-[#071d40] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
-      >
-        <div className="mx-auto max-w-[1380px]">
-          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
-            {/* Left Column: Anchor message */}
-            <div className="lg:col-span-5">
-              <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                The Service Hub Standard
-              </span>
+                  {/* Subtitle */}
+                  <p className="mt-3 text-[18px] font-semibold uppercase tracking-wide text-[#f4b82b] sm:text-[21px]">
+                    FAST. RELIABLE. AFFORDABLE.
+                  </p>
 
-              <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:leading-tight">
-                Dependable Doorstep Care Without the Hassle
-              </h2>
+                  <div className="mt-4 h-[3px] w-[62px] bg-[#f4b82b]" />
 
-              <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
+                  {/* Description */}
+                  <p className="mt-5 max-w-[535px] text-[14px] leading-6 text-white/90 sm:text-[16px] sm:leading-7">
+                    We provide expert repair and maintenance services for washing
+                    machines, refrigerators, air conditioners, microwaves,
+                    dishwashers, water heaters, TVs, and other household appliances.
+                    Doorstep service with genuine spare parts and professional care.
+                  </p>
 
-              <p className="text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
-                We focus on dependable doorstep diagnostics, authentic components, and customer-centered care to keep your home appliances running smoothly.
-              </p>
+                  {/* Feature icons */}
+                  <div className="mt-7 grid max-w-[610px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
+                    <FeatureItem icon={<ShieldIcon />}>
+                      EXPERT
+                      <br />
+                      TECHNICIANS
+                    </FeatureItem>
 
-              <div className="mt-7">
-                <a
-                  href="/why-us"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigateTo("/why-us");
-                  }}
-                  className="inline-flex items-center gap-2 rounded-md border border-[#eeb52a]/70 px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a]/10 hover:border-[#eeb52a]"
-                >
-                  <span>Learn Why Customers Choose Us</span>
-                  <ArrowIcon />
-                </a>
-              </div>
-            </div>
+                    <FeatureItem icon={<GenuineIcon />}>
+                      GENUINE
+                      <br />
+                      SPARE PARTS
+                    </FeatureItem>
 
-            {/* Right Column: 4 Horizontal Feature Strips (2x2 grid) */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-7">
-              {/* Feature 1 */}
-              <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
-                    <ShieldIcon />
+                    <FeatureItem icon={<HomeServiceIcon />}>
+                      DOORSTEP
+                      <br />
+                      SERVICE
+                    </FeatureItem>
                   </div>
+
+                  {/* CTA */}
+                  <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center">
+                    <a
+                      href="/services"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateTo("/services");
+                      }}
+                      className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-[#f7c23c] to-[#eaaa1e] px-7 py-3.5 text-[14px] font-bold uppercase tracking-wide text-[#071a39] shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-[#f0b52a]/20 sm:text-[15px]"
+                    >
+                      Explore Services
+                    </a>
+
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateTo("/contact");
+                      }}
+                      className="inline-flex items-center justify-center gap-2 rounded-md border border-[#eeb52a]/60 px-7 py-3.5 text-[14px] font-semibold text-[#f4b82b] transition hover:border-[#eeb52a] hover:bg-[#eeb52a]/10 sm:text-[15px]"
+                    >
+                      <CalendarIcon />
+                      <span>Book a Service</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* ================= SERVICES DISCOVERY ================= */}
+            <section
+              id="services"
+              className="relative bg-[#061a3a] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
+            >
+              <div className="mx-auto max-w-[1380px]">
+                {/* Asymmetric Header */}
+                <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end sm:mb-12">
                   <div>
-                    <h3 className="text-sm font-bold text-white">Expert Service</h3>
-                    <p className="mt-1 text-xs leading-5 text-white/70">Careful diagnosis and professional home appliance servicing.</p>
+                    <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
+                      Appliance Care &amp; Repair
+                    </span>
+                    <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                      Our Appliance Services
+                    </h2>
+                    <div className="mt-3.5 h-[3px] w-12 bg-[#eeb52a]" />
                   </div>
+                  <a
+                    href="/services"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigateTo("/services");
+                    }}
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:text-[#ffd666]"
+                  >
+                    <span>Explore All 8 Categories</span>
+                    <ArrowIcon />
+                  </a>
+                </div>
+
+                {/* Service discovery cards */}
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  {services.map((service) => (
+                    <a
+                      key={service.title + service.title2}
+                      href="/services"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateTo("/services");
+                      }}
+                      className="group flex min-h-[210px] flex-col justify-between rounded-xl border border-[#314a6c] bg-[#0a2145]/50 p-5 text-left transition duration-300 hover:-translate-y-1 hover:border-[#eeb52a] hover:bg-[#0d284f]"
+                    >
+                      <div>
+                        <div className="mb-3.5 flex h-12 w-12 items-center justify-center rounded-lg bg-[#061a3a] text-[#f4b82b] transition duration-300 group-hover:scale-105 group-hover:border group-hover:border-[#eeb52a]/40">
+                          <ServiceIcon type={service.icon} />
+                        </div>
+
+                        <h3 className="text-sm font-bold leading-5 text-white transition group-hover:text-[#f4b82b]">
+                          {service.title} {service.title2}
+                        </h3>
+
+                        <p className="mt-2 text-xs leading-5 text-white/75">
+                          {service.description}
+                        </p>
+                      </div>
+
+                      <div className="mt-4 flex items-center gap-1.5 pt-3 border-t border-[#314a6c]/40 text-xs font-semibold text-[#f4b82b]/80 group-hover:text-[#f4b82b]">
+                        <span>View Details</span>
+                        <ArrowIcon />
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
+            </section>
 
-              {/* Feature 2 */}
-              <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
-                    <TruckIcon />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-white">Doorstep Convenience</h3>
-                    <p className="mt-1 text-xs leading-5 text-white/70">Service appointments delivered directly at your home.</p>
-                  </div>
-                </div>
-              </div>
+            {/* ================= WHY CHOOSE US (Asymmetric Highlight Split) ================= */}
+            <section
+              id="why-us"
+              className="relative bg-[#071d40] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
+            >
+              <div className="mx-auto max-w-[1380px]">
+                <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
+                  {/* Left Column: Anchor message */}
+                  <div className="lg:col-span-5">
+                    <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
+                      The Service Hub Standard
+                    </span>
 
-              {/* Feature 3 */}
-              <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
-                    <SafeIcon />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-white">Transparent Communication</h3>
-                    <p className="mt-1 text-xs leading-5 text-white/70">Clear explanations about the issue and recommended service.</p>
-                  </div>
-                </div>
-              </div>
+                    <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:leading-tight">
+                      Dependable Doorstep Care Without the Hassle
+                    </h2>
 
-              {/* Feature 4 */}
-              <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
-                    <MedalIcon />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-white">Customer-First Care</h3>
-                    <p className="mt-1 text-xs leading-5 text-white/70">Respectful service focused on your convenience and time.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
-      {/* ================= ABOUT (Editorial Split Showcase) ================= */}
-      <section
-        id="about"
-        className="bg-[#061a3a] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
-      >
-        <div className="mx-auto max-w-[1380px]">
-          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
-            {/* Left Editorial Narrative */}
-            <div className="lg:col-span-7">
-              <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                About Service Hub
-              </span>
+                    <p className="text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
+                      We focus on dependable doorstep diagnostics, authentic components, and customer-centered care to keep your home appliances running smoothly.
+                    </p>
 
-              <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Professional Home Appliance Care You Can Rely On
-              </h2>
-
-              <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
-
-              <p className="text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-                We provide reliable repair, maintenance, installation and cleaning services for major household appliances. Our technicians focus on professional workmanship, genuine spare parts and convenient doorstep service.
-              </p>
-
-              <p className="mt-3 text-xs leading-5 text-white/65 sm:text-sm sm:leading-6">
-                From laundry units to kitchen cooling and climate appliances, we ensure comprehensive on-site diagnostics so your household runs smoothly without disruption.
-              </p>
-
-              <div className="mt-6">
-                <a
-                  href="/about"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigateTo("/about");
-                  }}
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:text-[#ffd666]"
-                >
-                  <span>Read Our Full Story &amp; Principles</span>
-                  <ArrowIcon />
-                </a>
-              </div>
-            </div>
-
-            {/* Right Pillars Box */}
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl border border-[#314a6c] bg-[#0a2145]/70 p-6 sm:p-8 shadow-xl">
-                <h3 className="font-serif text-lg font-bold text-white">
-                  Our Service Philosophy
-                </h3>
-                <p className="mt-1 text-xs text-white/65">
-                  Three core commitments delivered on every visit.
-                </p>
-
-                <div className="mt-5 space-y-4">
-                  <div className="flex items-start gap-3 border-b border-[#314a6c]/50 pb-3">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">1</span>
-                    <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wide text-white">Authentic Spare Parts</h4>
-                      <p className="mt-0.5 text-xs text-white/70">Genuine replacement components for lasting performance.</p>
+                    <div className="mt-7">
+                      <a
+                        href="/why-us"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigateTo("/why-us");
+                        }}
+                        className="inline-flex items-center gap-2 rounded-md border border-[#eeb52a]/70 px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a]/10 hover:border-[#eeb52a]"
+                      >
+                        <span>Learn Why Customers Choose Us</span>
+                        <ArrowIcon />
+                      </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 border-b border-[#314a6c]/50 pb-3">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">2</span>
-                    <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wide text-white">Accurate Diagnostics</h4>
-                      <p className="mt-0.5 text-xs text-white/70">Thorough inspection of root causes before any work begins.</p>
+                  {/* Right Column: 4 Horizontal Feature Strips (2x2 grid) */}
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-7">
+                    {/* Feature 1 */}
+                    <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
+                          <ShieldIcon />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white">Expert Service</h3>
+                          <p className="mt-1 text-xs leading-5 text-white/70">Careful diagnosis and professional home appliance servicing.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">3</span>
-                    <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wide text-white">Doorstep Convenience</h4>
-                      <p className="mt-0.5 text-xs text-white/70">On-site service visits arranged at your schedule.</p>
+                    {/* Feature 2 */}
+                    <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
+                          <TruckIcon />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white">Doorstep Convenience</h3>
+                          <p className="mt-1 text-xs leading-5 text-white/70">Service appointments delivered directly at your home.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Feature 3 */}
+                    <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
+                          <SafeIcon />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white">Transparent Communication</h3>
+                          <p className="mt-1 text-xs leading-5 text-white/70">Clear explanations about the issue and recommended service.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Feature 4 */}
+                    <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/60 p-5 transition duration-200 hover:border-[#eeb52a]/60">
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[#eeb52a]/40 bg-[#061a3a] text-[#f4b82b]">
+                          <MedalIcon />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white">Customer-First Care</h3>
+                          <p className="mt-1 text-xs leading-5 text-white/70">Respectful service focused on your convenience and time.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      {/* ================= HOME BOOKING BANNER ================= */}
-      <section
-        id="contact"
-        className="bg-[#071d40] px-6 py-16 pb-28 sm:px-10 sm:pb-20 lg:px-12"
-      >
-        <div className="mx-auto max-w-[1200px] rounded-2xl border border-[#eeb52a]/40 bg-gradient-to-r from-[#0a2145] to-[#071d40] p-7 sm:p-12 shadow-2xl">
-          <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
-            <div className="text-center lg:text-left">
-              <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                Fast Doorstep Service
-              </span>
-              <h2 className="mt-2 font-serif text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-                Ready to Restore Your Appliance?
-              </h2>
-              <p className="mt-2 max-w-xl text-xs leading-5 text-white/75 sm:text-sm sm:leading-6">
-                Contact our service desk for prompt inspection, repair, or maintenance across your household appliances.
-              </p>
-            </div>
+            {/* ================= ABOUT (Editorial Split Showcase) ================= */}
+            <section
+              id="about"
+              className="bg-[#061a3a] px-6 py-16 sm:px-10 sm:py-20 lg:px-12"
+            >
+              <div className="mx-auto max-w-[1380px]">
+                <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
+                  {/* Left Editorial Narrative */}
+                  <div className="lg:col-span-7">
+                    <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
+                      About Service Hub
+                    </span>
 
-            <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-              <a
-                href="tel:8870657575"
-                className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
-              >
-                CALL 8870657575
-              </a>
+                    <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                      Professional Home Appliance Care You Can Rely On
+                    </h2>
 
-              <a
-                href="/contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigateTo("/contact");
-                }}
-                className="inline-flex items-center justify-center rounded-md bg-[#f4b82b] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#061a3a] transition hover:bg-[#ffc94a]"
-              >
-                BOOK SERVICE
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  )}
+                    <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
+
+                    <p className="text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
+                      We provide reliable repair, maintenance, installation and cleaning services for major household appliances. Our technicians focus on professional workmanship, genuine spare parts and convenient doorstep service.
+                    </p>
+
+                    <p className="mt-3 text-xs leading-5 text-white/65 sm:text-sm sm:leading-6">
+                      From laundry units to kitchen cooling and climate appliances, we ensure comprehensive on-site diagnostics so your household runs smoothly without disruption.
+                    </p>
+
+                    <div className="mt-6">
+                      <a
+                        href="/about"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigateTo("/about");
+                        }}
+                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:text-[#ffd666]"
+                      >
+                        <span>Read Our Full Story &amp; Principles</span>
+                        <ArrowIcon />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Right Pillars Box */}
+                  <div className="lg:col-span-5">
+                    <div className="rounded-2xl border border-[#314a6c] bg-[#0a2145]/70 p-6 sm:p-8 shadow-xl">
+                      <h3 className="font-serif text-lg font-bold text-white">
+                        Our Service Philosophy
+                      </h3>
+                      <p className="mt-1 text-xs text-white/65">
+                        Three core commitments delivered on every visit.
+                      </p>
+
+                      <div className="mt-5 space-y-4">
+                        <div className="flex items-start gap-3 border-b border-[#314a6c]/50 pb-3">
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">1</span>
+                          <div>
+                            <h4 className="text-xs font-bold uppercase tracking-wide text-white">Authentic Spare Parts</h4>
+                            <p className="mt-0.5 text-xs text-white/70">Genuine replacement components for lasting performance.</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 border-b border-[#314a6c]/50 pb-3">
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">2</span>
+                          <div>
+                            <h4 className="text-xs font-bold uppercase tracking-wide text-white">Accurate Diagnostics</h4>
+                            <p className="mt-0.5 text-xs text-white/70">Thorough inspection of root causes before any work begins.</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">3</span>
+                          <div>
+                            <h4 className="text-xs font-bold uppercase tracking-wide text-white">Doorstep Convenience</h4>
+                            <p className="mt-0.5 text-xs text-white/70">On-site service visits arranged at your schedule.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* ================= HOME BOOKING BANNER ================= */}
+            <section
+              id="contact"
+              className="bg-[#071d40] px-6 py-16 pb-28 sm:px-10 sm:pb-20 lg:px-12"
+            >
+              <div className="mx-auto max-w-[1200px] rounded-2xl border border-[#eeb52a]/40 bg-gradient-to-r from-[#0a2145] to-[#071d40] p-7 sm:p-12 shadow-2xl">
+                <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+                  <div className="text-center lg:text-left">
+                    <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
+                      Fast Doorstep Service
+                    </span>
+                    <h2 className="mt-2 font-serif text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
+                      Ready to Restore Your Appliance?
+                    </h2>
+                    <p className="mt-2 max-w-xl text-xs leading-5 text-white/75 sm:text-sm sm:leading-6">
+                      Contact our service desk for prompt inspection, repair, or maintenance across your household appliances.
+                    </p>
+                  </div>
+
+                  <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
+                    <a
+                      href="tel:918870657575"
+                      className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
+                    >
+                      CALL 918870657575
+                    </a>
+
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateTo("/contact");
+                      }}
+                      className="inline-flex items-center justify-center rounded-md bg-[#f4b82b] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#061a3a] transition hover:bg-[#ffc94a]"
+                    >
+                      BOOK SERVICE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </>
+        )}
       </main>
 
       <Footer />

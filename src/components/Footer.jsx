@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="tel:8870657575"
+                href="tel:918870657575"
                 className="inline-flex items-center gap-2 rounded-full border border-[#eeb52a] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#041226]"
               >
                 <svg
@@ -66,11 +66,11 @@ export default function Footer() {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <span>Call 8870657575</span>
+                <span>Call 918870657575</span>
               </a>
 
               <a
-                href="https://wa.me/8870657575"
+                href="https://wa.me/918870657575"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-[#25d366]/40 bg-[#25d366]/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#25d366] transition hover:bg-[#25d366] hover:text-black"
@@ -142,19 +142,19 @@ export default function Footer() {
             <div className="mt-5 space-y-2 text-sm text-white/80">
               <p className="flex items-center gap-2">
                 <span className="text-[#f4b82b]">Phone:</span>
-                <a href="tel:8870657575" className="hover:text-[#f4b82b]">
-                  8870657575
+                <a href="tel:918870657575" className="hover:text-[#f4b82b]">
+                  918870657575
                 </a>
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-[#f4b82b]">WhatsApp:</span>
                 <a
-                  href="https://wa.me/8870657575"
+                  href="https://wa.me/918870657575"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#f4b82b]"
                 >
-                  8870657575
+                  918870657575
                 </a>
               </p>
               <div className="flex items-start gap-2 pt-1">

@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Can I send photos or videos of the issue via WhatsApp?",
     answer:
-      "Yes, you can connect with us on WhatsApp at 8870657575 to share photos, video clips, or error codes of the issue before the visit.",
+      "Yes, you can connect with us on WhatsApp at 918870657575 to share photos, video clips, or error codes of the issue before the visit.",
   },
   {
     question: "What details should I have ready when contacting you?",
@@ -123,7 +123,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
 *Preferred Contact Method:* ${formData.preferredMethod}
 *Message:* ${formData.message.trim()}`;
 
-    const url = `https://wa.me/8870657575?text=${encodeURIComponent(textContent)}`;
+    const url = `https://wa.me/918870657575?text=${encodeURIComponent(textContent)}`;
     setWhatsappLink(url);
     setLastSubmittedText(textContent);
     setSubmitted(true);
@@ -182,10 +182,10 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
       <section className="px-6 py-12 sm:px-10 sm:py-16 lg:px-12">
         <div className="mx-auto max-w-[1380px]">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 items-start">
-            
+
             {/* Left Column: Direct Connect & Support Hub (5 Cols) */}
             <div className="lg:col-span-5 space-y-6">
-              
+
               {/* Direct Call & WhatsApp Panel */}
               <div className="rounded-2xl border border-[#314a6c] bg-[#0a2145] p-6 sm:p-8 shadow-xl">
                 <div className="border-b border-[#314a6c]/60 pb-4">
@@ -204,10 +204,10 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                     <span className="text-[11px] font-bold text-[#f4b82b]">Fastest Response</span>
                   </div>
                   <a
-                    href="tel:8870657575"
+                    href="tel:918870657575"
                     className="mt-2 flex items-center justify-between text-2xl font-bold tracking-tight text-[#f4b82b] transition hover:text-white"
                   >
-                    <span>8870657575</span>
+                    <span>918870657575</span>
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#eeb52a]/15 text-[#f4b82b]">
                       <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -219,7 +219,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
 
                 {/* WhatsApp Chat Box */}
                 <a
-                  href="https://wa.me/8870657575"
+                  href="https://wa.me/918870657575"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 flex items-center justify-between rounded-xl border border-emerald-500/40 bg-emerald-500/10 p-4 text-white transition duration-200 hover:border-emerald-400 hover:bg-emerald-500/20"
@@ -348,10 +348,10 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                           )}
 
                           <a
-                            href="tel:8870657575"
+                            href="tel:918870657575"
                             className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
                           >
-                            Call Now: 8870657575
+                            Call Now: 918870657575
                           </a>
 
                           <button
@@ -397,11 +397,10 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                         aria-required="true"
                         aria-invalid={errors.fullName ? "true" : "false"}
                         aria-describedby={errors.fullName ? "fullName-error" : undefined}
-                        className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${
-                          errors.fullName
-                            ? "border-red-500 focus:ring-red-400"
-                            : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
-                        }`}
+                        className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${errors.fullName
+                          ? "border-red-500 focus:ring-red-400"
+                          : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
+                          }`}
                       />
                       {errors.fullName && (
                         <p id="fullName-error" role="alert" className="mt-1.5 text-xs text-red-400">{errors.fullName}</p>
@@ -419,15 +418,14 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="e.g. 8870657575"
+                        placeholder="e.g. 918870657575"
                         aria-required="true"
                         aria-invalid={errors.phone ? "true" : "false"}
                         aria-describedby={errors.phone ? "phone-error" : undefined}
-                        className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${
-                          errors.phone
-                            ? "border-red-500 focus:ring-red-400"
-                            : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
-                        }`}
+                        className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${errors.phone
+                          ? "border-red-500 focus:ring-red-400"
+                          : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
+                          }`}
                       />
                       {errors.phone && (
                         <p id="phone-error" role="alert" className="mt-1.5 text-xs text-red-400">{errors.phone}</p>
@@ -543,11 +541,10 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                       aria-required="true"
                       aria-invalid={errors.message ? "true" : "false"}
                       aria-describedby={errors.message ? "message-error" : undefined}
-                      className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${
-                        errors.message
-                          ? "border-red-500 focus:ring-red-400"
-                          : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
-                      }`}
+                      className={`w-full rounded-lg border bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:outline-none focus:ring-2 ${errors.message
+                        ? "border-red-500 focus:ring-red-400"
+                        : "border-[#314a6c] focus:border-[#eeb52a] focus:ring-[#eeb52a]/30"
+                        }`}
                     />
                     {errors.message && (
                       <p id="message-error" role="alert" className="mt-1.5 text-xs text-red-400">{errors.message}</p>
@@ -607,9 +604,8 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                       {faq.question}
                     </span>
                     <span
-                      className={`ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#314a6c] text-[#f4b82b] transition-transform duration-300 ${
-                        isOpen ? "rotate-180 border-[#eeb52a]" : ""
-                      }`}
+                      className={`ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#314a6c] text-[#f4b82b] transition-transform duration-300 ${isOpen ? "rotate-180 border-[#eeb52a]" : ""
+                        }`}
                     >
                       <svg
                         viewBox="0 0 24 24"
@@ -638,8 +634,8 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
           {/* Minimalist Contact Help Note instead of duplicate 1100px CTA */}
           <div className="mt-10 rounded-xl border border-[#314a6c]/50 bg-[#061a3a]/80 p-5 text-center text-xs text-white/70">
             Need urgent assistance or have immediate questions? Call our direct support line at{" "}
-            <a href="tel:8870657575" className="font-semibold text-[#f4b82b] hover:underline">
-              8870657575
+            <a href="tel:918870657575" className="font-semibold text-[#f4b82b] hover:underline">
+              918870657575
             </a>{" "}
             or message us on WhatsApp.
           </div>

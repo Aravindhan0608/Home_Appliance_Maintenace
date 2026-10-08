@@ -151,11 +151,10 @@ export default function Navbar() {
                     e.preventDefault();
                     navigateTo(item.href);
                   }}
-                  className={`relative py-1.5 text-[15px] font-medium tracking-wide transition duration-300 ${
-                    isActive
-                      ? "text-[#f5bb2f]"
-                      : "text-white hover:text-[#f5bb2f]"
-                  }`}
+                  className={`relative py-1.5 text-[15px] font-medium tracking-wide transition duration-300 ${isActive
+                    ? "text-[#f5bb2f]"
+                    : "text-white hover:text-[#f5bb2f]"
+                    }`}
                 >
                   {item.name}
 
@@ -171,21 +170,21 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             {/* Desktop / Tablet Phone */}
             <a
-              href="tel:8870657575"
-              aria-label="Call Service Hub at 8870657575"
+              href="tel:918870657575"
+              aria-label="Call Service Hub at 918870657575"
               className="hidden items-center gap-2.5 rounded-full border border-[#e9ad21] px-5 py-2 text-white transition duration-300 hover:bg-[#e9ad21] hover:text-[#071a39] sm:flex lg:py-2.5"
             >
               <PhoneIcon />
               <span className="text-[14px] font-medium tracking-wide sm:text-[15px]">
-                8870657575
+                918870657575
               </span>
             </a>
 
             {/* Mobile phone button */}
             <a
-              href="tel:8870657575"
+              href="tel:918870657575"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e9ad21] text-[#f5bb2f] sm:hidden"
-              aria-label="Call Service Hub at 8870657575"
+              aria-label="Call Service Hub at 918870657575"
             >
               <PhoneIcon />
             </a>
@@ -223,11 +222,10 @@ export default function Navbar() {
                       setIsMobileMenuOpen(false);
                       navigateTo(item.href);
                     }}
-                    className={`flex items-center justify-between rounded-lg px-4 py-3.5 text-[15px] font-medium tracking-wide transition duration-200 ${
-                      isActive
-                        ? "border-l-4 border-[#f5bb2f] bg-[#0a234d] font-semibold text-[#f5bb2f]"
-                        : "text-white/90 hover:bg-[#0a234d]/60 hover:text-[#f5bb2f]"
-                    }`}
+                    className={`flex items-center justify-between rounded-lg px-4 py-3.5 text-[15px] font-medium tracking-wide transition duration-200 ${isActive
+                      ? "border-l-4 border-[#f5bb2f] bg-[#0a234d] font-semibold text-[#f5bb2f]"
+                      : "text-white/90 hover:bg-[#0a234d]/60 hover:text-[#f5bb2f]"
+                      }`}
                   >
                     <span>{item.name}</span>
                     {isActive && (
