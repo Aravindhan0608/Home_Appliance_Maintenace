@@ -50,7 +50,7 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="tel:918870657575"
+                href="tel:+918870657575"
                 className="inline-flex items-center gap-2 rounded-full border border-[#eeb52a] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#041226]"
               >
                 <svg
@@ -142,7 +142,7 @@ export default function Footer() {
             <div className="mt-5 space-y-2 text-sm text-white/80">
               <p className="flex items-center gap-2">
                 <span className="text-[#f4b82b]">Phone:</span>
-                <a href="tel:918870657575" className="hover:text-[#f4b82b]">
+                <a href="tel:+918870657575" className="hover:text-[#f4b82b]">
                   918870657575
                 </a>
               </p>

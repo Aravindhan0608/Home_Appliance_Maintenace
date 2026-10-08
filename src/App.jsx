@@ -776,7 +776,7 @@ export default function App() {
 
                   <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
                     <a
-                      href="tel:918870657575"
+                      href="tel:+918870657575"
                       className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
                     >
                       CALL 918870657575

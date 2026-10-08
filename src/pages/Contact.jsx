@@ -204,7 +204,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                     <span className="text-[11px] font-bold text-[#f4b82b]">Fastest Response</span>
                   </div>
                   <a
-                    href="tel:918870657575"
+                    href="tel:+918870657575"
                     className="mt-2 flex items-center justify-between text-2xl font-bold tracking-tight text-[#f4b82b] transition hover:text-white"
                   >
                     <span>918870657575</span>
@@ -348,7 +348,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                           )}
 
                           <a
-                            href="tel:918870657575"
+                            href="tel:+918870657575"
                             className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
                           >
                             Call Now: 918870657575
@@ -634,7 +634,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
           {/* Minimalist Contact Help Note instead of duplicate 1100px CTA */}
           <div className="mt-10 rounded-xl border border-[#314a6c]/50 bg-[#061a3a]/80 p-5 text-center text-xs text-white/70">
             Need urgent assistance or have immediate questions? Call our direct support line at{" "}
-            <a href="tel:918870657575" className="font-semibold text-[#f4b82b] hover:underline">
+            <a href="tel:+918870657575" className="font-semibold text-[#f4b82b] hover:underline">
               918870657575
             </a>{" "}
             or message us on WhatsApp.
