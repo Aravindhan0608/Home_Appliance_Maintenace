@@ -38,7 +38,7 @@ const coreValues = [
   {
     title: "Quality Service",
     description:
-      "Professional workmanship using genuine spare parts and proven diagnostic procedures across all major brands.",
+      "Professional workmanship using replacement parts and proven diagnostic procedures across all major brands.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-8 w-8" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <circle cx="24" cy="24" r="17" />
@@ -191,7 +191,7 @@ export default function About() {
                 Our customer-focused approach means prioritizing convenience, quick turnarounds, and clear guidance. We bring skilled workmanship and quality replacement parts right to your doorstep so you never have to deal with the hassle of moving heavy appliances.
               </p>
               <p className="text-xs text-white/65 sm:text-sm">
-                Every service visit concludes with complete operational testing, ensuring that cycles, cooling, heating, or electronic controls run exactly as intended before we consider the job done.
+                Every service visit concludes with complete operational testing, ensuring that cycles, cooling, heating, or electronic controls are functioning properly after operational checks before we consider the job done.
               </p>
             </div>
           </div>
@@ -226,7 +226,7 @@ export default function About() {
               </h3>
               <div className="my-3.5 h-[2px] w-10 bg-[#eeb52a]" />
               <p className="text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-                Every service visit is grounded in clarity: explaining the diagnosed issue honestly before starting, using genuine components, and testing thoroughly so you have lasting peace of mind.
+                Every service visit is grounded in clarity: explaining the diagnosed issue honestly before starting, using quality components, and testing thoroughly so you have lasting peace of mind.
               </p>
             </div>
           </div>

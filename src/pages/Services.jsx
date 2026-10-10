@@ -62,7 +62,7 @@ const services = [
     id: "other",
     title: "Other Home Appliances",
     description:
-      "Reliable inspection and repair for other essential household electrical appliances with professional care and genuine components.",
+      "Reliable inspection and repair for other essential household electrical appliances with professional care and quality components.",
     image: "/assets/appliances/other-appliances.png",
     alt: "Home appliance repair service",
   },
@@ -85,13 +85,13 @@ const steps = [
     number: "03",
     title: "Inspection & Repair",
     description:
-      "We perform accurate on-site diagnostics and carry out professional repair work with genuine parts.",
+      "We perform thorough on-site diagnostics and carry out professional repair work with replacement parts.",
   },
   {
     number: "04",
     title: "Service Completed",
     description:
-      "Full post-service cycle testing and demonstration ensure your machine operates flawlessly.",
+      "Full post-service cycle testing and demonstration ensure your machine operates as expected after testing.",
   },
 ];
 
@@ -160,7 +160,7 @@ const faqs = [
   {
     question: "Do you provide doorstep service for all appliances?",
     answer:
-      "Yes, our qualified technicians provide convenient doorstep service. They arrive at your home equipped with professional diagnostic tools and genuine spare parts to inspect and service your appliances on-site.",
+      "Yes, our service technicians provide convenient doorstep service. They arrive at your home equipped with professional diagnostic tools and replacement parts to inspect and service your appliances on-site.",
   },
   {
     question: "How can I contact Service Hub?",
@@ -345,7 +345,7 @@ export default function Services() {
             </h2>
             <div className="mt-3.5 h-[3px] w-12 bg-[#eeb52a]" />
             <p className="mt-3 text-sm leading-6 text-white/70 sm:text-base">
-              A transparent, hassle-free service experience from booking to verified testing.
+              A transparent, hassle-free service experience from booking to completed operational testing.
             </p>
           </div>
 

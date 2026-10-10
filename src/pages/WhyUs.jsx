@@ -122,7 +122,7 @@ const serviceCommitments = [
   {
     title: "Professional Service Approach",
     description:
-      "Equipped with appropriate tools and genuine replacement components, we respect your home and appliance integrity.",
+      "Equipped with appropriate tools and quality replacement components, we respect your home and appliance integrity.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="1.8">
         <circle cx="24" cy="24" r="17" />
@@ -137,7 +137,7 @@ const whyUsFaqs = [
   {
     question: "What details should I provide when booking an appliance visit?",
     answer:
-      "Sharing your appliance category (such as washing machine, refrigerator, or AC), brand, and observable symptoms helps our technician arrive equipped with the appropriate diagnostic tools and genuine spare parts.",
+      "Sharing your appliance category (such as washing machine, refrigerator, or AC), brand, and observable symptoms helps our technician arrive equipped with the appropriate diagnostic tools and replacement parts.",
   },
   {
     question: "How do your technicians handle diagnostics before repair?",

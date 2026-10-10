@@ -743,7 +743,7 @@ export default function App() {
                     <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
                     <p className="text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-                      We provide reliable repair, maintenance, installation and cleaning services for major household appliances. Our technicians focus on professional workmanship, genuine spare parts and convenient doorstep service.
+                      We provide reliable repair, maintenance, installation and cleaning services for major household appliances. Our technicians focus on professional workmanship, replacement parts and convenient doorstep service.
                     </p>
 
                     <p className="mt-3 text-xs leading-5 text-white/65 sm:text-sm sm:leading-6">
@@ -815,7 +815,7 @@ export default function App() {
                 <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
                   <div className="text-center lg:text-left">
                     <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                      Fast Doorstep Service
+                      Convenient Doorstep Service
                     </span>
                     <h2 className="mt-2 font-serif text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
                       Ready to Restore Your Appliance?

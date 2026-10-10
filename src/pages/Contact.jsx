@@ -227,7 +227,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
                 <div className="mt-6 rounded-xl border border-[#314a6c] bg-[#061a3a] p-4 transition duration-200 hover:border-[#eeb52a]/60">
                   <div className="flex items-center justify-between">
                     <p className="text-xs font-semibold uppercase tracking-wider text-white/60">Phone Support Line</p>
-                    <span className="text-[11px] font-bold text-[#f4b82b]">Fastest Response</span>
+                    <span className="text-[11px] font-bold text-[#f4b82b]">Direct Phone Support</span>
                   </div>
                   <a
                     href="tel:+918870657575"
@@ -353,7 +353,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
               <div className="rounded-2xl border border-[#314a6c] bg-[#0a2145] p-6 sm:p-10 shadow-2xl">
                 <div className="border-b border-[#314a6c]/60 pb-5 mb-6">
                   <span className="text-xs font-bold uppercase tracking-[2px] text-[#f4b82b]">
-                    Fast Online Booking
+                    Direct WhatsApp Enquiry
                   </span>
                   <h2 className="mt-1 text-2xl font-bold text-white sm:text-3xl">
                     Home Appliance Service Form
