@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Can I send photos or videos of the issue via WhatsApp?",
     answer:
-      "Yes, you can connect with us on WhatsApp at 918870657575 to share photos, video clips, or error codes of the issue before the visit.",
+      "Yes, you can connect with us on WhatsApp at 8870657575 to share photos, video clips, or error codes of the issue before the visit.",
   },
   {
     question: "What details should I have ready when contacting you?",
@@ -233,7 +233,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
                     href="tel:+918870657575"
                     className="mt-2 flex items-center justify-between text-2xl font-bold tracking-tight text-[#f4b82b] transition hover:text-white"
                   >
-                    <span>918870657575</span>
+                    <span>8870657575</span>
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#eeb52a]/15 text-[#f4b82b]">
                       <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -397,7 +397,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
                             href="tel:+918870657575"
                             className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
                           >
-                            Call Now: 918870657575
+                            Call Now: 8870657575
                           </a>
 
                           <button
@@ -706,7 +706,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
           <div className="mt-10 rounded-xl border border-[#314a6c]/50 bg-[#061a3a]/80 p-5 text-center text-xs text-white/70">
             Need urgent assistance or have immediate questions? Call our direct support line at{" "}
             <a href="tel:+918870657575" className="font-semibold text-[#f4b82b] hover:underline">
-              918870657575
+              8870657575
             </a>{" "}
             or message us on WhatsApp.
           </div>

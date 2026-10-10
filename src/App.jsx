@@ -830,7 +830,7 @@ export default function App() {
                       href="tel:+918870657575"
                       className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
                     >
-                      CALL 918870657575
+                      CALL 8870657575
                     </a>
 
                     <a

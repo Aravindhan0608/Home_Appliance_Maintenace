@@ -155,7 +155,7 @@ const faqs = [
   {
     question: "How can I request an appliance service?",
     answer:
-      "You can request a service directly by calling our support line at 918870657575, chatting with us on WhatsApp, or clicking 'Book a Service' on our website to reach our enquiry desk.",
+      "You can request a service directly by calling our support line at 8870657575, chatting with us on WhatsApp, or clicking 'Book a Service' on our website to reach our enquiry desk.",
   },
   {
     question: "Do you provide doorstep service for all appliances?",
@@ -523,7 +523,7 @@ export default function Services() {
                 href="tel:+918870657575"
                 className="inline-flex items-center justify-center rounded-md border border-[#eeb52a] px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:bg-[#eeb52a] hover:text-[#061a3a]"
               >
-                CALL 918870657575
+                CALL 8870657575
               </a>
 
               <a

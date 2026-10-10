@@ -171,12 +171,12 @@ export default function Navbar() {
             {/* Desktop / Tablet Phone */}
             <a
               href="tel:+918870657575"
-              aria-label="Call Service Hub at 918870657575"
+              aria-label="Call Service Hub at 8870657575"
               className="hidden items-center gap-2.5 rounded-full border border-[#e9ad21] px-5 py-2 text-white transition duration-300 hover:bg-[#e9ad21] hover:text-[#071a39] sm:flex lg:py-2.5"
             >
               <PhoneIcon />
               <span className="text-[14px] font-medium tracking-wide sm:text-[15px]">
-                918870657575
+                8870657575
               </span>
             </a>
 
@@ -184,7 +184,7 @@ export default function Navbar() {
             <a
               href="tel:+918870657575"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e9ad21] text-[#f5bb2f] sm:hidden"
-              aria-label="Call Service Hub at 918870657575"
+              aria-label="Call Service Hub at 8870657575"
             >
               <PhoneIcon />
             </a>
