@@ -34,10 +34,20 @@ const faqs = [
   },
 ];
 
+const serviceAreaOptions = [
+  "Mettupalayam",
+  "Sirumugai",
+  "Karamadai",
+  "Annur",
+  "Periyanaikanpalayam",
+  "Other",
+];
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
+    serviceArea: "",
     email: "",
     appliance: "Washing Machine",
     service: "Repair & Troubleshooting",
@@ -99,9 +109,21 @@ export default function Contact() {
       newErrors.fullName = "Full name is required.";
     }
 
-    const digitsOnly = formData.phone.replace(/[^0-9]/g, "");
-    if (!digitsOnly || digitsOnly.length < 10) {
-      newErrors.phone = "Please enter a valid 10-digit phone number.";
+    const rawPhone = formData.phone.trim();
+    let sanitizedPhone = rawPhone.replace(/[\s\-()]/g, "");
+    if (sanitizedPhone.startsWith("+91")) {
+      sanitizedPhone = sanitizedPhone.slice(3);
+    } else if (sanitizedPhone.startsWith("91") && sanitizedPhone.length === 12) {
+      sanitizedPhone = sanitizedPhone.slice(2);
+    } else if (sanitizedPhone.startsWith("0") && sanitizedPhone.length === 11) {
+      sanitizedPhone = sanitizedPhone.slice(1);
+    }
+
+    const isIndianMobile = /^[6-9]\d{9}$/.test(sanitizedPhone);
+    if (!rawPhone) {
+      newErrors.phone = "Phone number is required.";
+    } else if (!isIndianMobile) {
+      newErrors.phone = "Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.";
     }
 
     if (!formData.message.trim()) {
@@ -110,6 +132,11 @@ export default function Contact() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
+      const firstErrorField = Object.keys(newErrors)[0];
+      const el = document.getElementById(firstErrorField);
+      if (el && typeof el.focus === "function") {
+        el.focus();
+      }
       return;
     }
 
@@ -118,7 +145,7 @@ export default function Contact() {
     const textContent = `*New Service Enquiry - Service Hub*
 *Full Name:* ${formData.fullName.trim()}
 *Phone Number:* ${formData.phone.trim()}
-${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:* ${formData.appliance}
+${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:* ${formData.appliance}
 *Service Required:* ${formData.service}
 *Preferred Contact Method:* ${formData.preferredMethod}
 *Message:* ${formData.message.trim()}`;
@@ -158,17 +185,16 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                 Service Hub Enquiry Desk
               </span>
               <h1 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                Book Doorstep Appliance Service
+                Doorstep Appliance Sales &amp; Repair Service
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/75 sm:text-base">
-                Call our direct phone line, chat on WhatsApp to share appliance faults, or submit the service form below for prompt doorstep scheduling.
+                Call our direct phone line, chat on WhatsApp to discuss appliance sales or service faults, or submit the enquiry form below for prompt doorstep scheduling.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-2 text-xs text-white/70">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-emerald-400 font-semibold">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-                Live Desk Available
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-[#314a6c] bg-[#0a2145] px-3 py-1 font-semibold text-[#f4b82b]">
+                Service Hours: 10 AM–6 PM
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#314a6c] bg-[#0a2145] px-3 py-1">
                 Doorstep Service
@@ -259,6 +285,26 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                         Mettupalayam,<br />
                         Tamil Nadu - 641301, India
                       </address>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Business Hours */}
+                <div className="mt-4 rounded-xl border border-[#314a6c] bg-[#061a3a] p-4 transition duration-200 hover:border-[#eeb52a]/60">
+                  <div className="flex items-start gap-3">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eeb52a]/15 text-[#f4b82b]">
+                      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-white/60">
+                        Business Hours
+                      </p>
+                      <p className="mt-1 text-xs text-white/90 sm:text-sm">
+                        Monday–Sunday: 10:00 AM–6:00 PM
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -418,7 +464,7 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="e.g. 918870657575"
+                        placeholder="e.g. 8870657575"
                         aria-required="true"
                         aria-invalid={errors.phone ? "true" : "false"}
                         aria-describedby={errors.phone ? "phone-error" : undefined}
@@ -478,6 +524,29 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                   </div>
 
                   <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    {/* Service Area / Location (Optional) */}
+                    <div>
+                      <label htmlFor="serviceArea" className="block text-xs font-semibold uppercase tracking-wider text-white/90 mb-2">
+                        Service Area / Location <span className="text-white/60 font-normal">(Optional)</span>
+                      </label>
+                      <select
+                        id="serviceArea"
+                        name="serviceArea"
+                        value={formData.serviceArea}
+                        onChange={handleChange}
+                        className="w-full rounded-lg border border-[#314a6c] bg-[#061a3a] px-4 py-3 text-sm text-white focus:border-[#eeb52a] focus:outline-none focus:ring-2 focus:ring-[#eeb52a]/30"
+                      >
+                        <option value="" className="bg-[#061a3a] text-white/60">
+                          Select Service Area (Optional)
+                        </option>
+                        {serviceAreaOptions.map((opt) => (
+                          <option key={opt} value={opt} className="bg-[#061a3a] text-white">
+                            {opt}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
                     {/* Email (Optional) */}
                     <div>
                       <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-white/90 mb-2">
@@ -493,13 +562,15 @@ ${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:
                         className="w-full rounded-lg border border-[#314a6c] bg-[#061a3a] px-4 py-3 text-sm text-white placeholder-white/60 focus:border-[#eeb52a] focus:outline-none focus:ring-2 focus:ring-[#eeb52a]/30"
                       />
                     </div>
+                  </div>
 
-                    {/* Preferred Contact Method */}
+                  {/* Preferred Contact Method */}
+                  <div>
                     <fieldset>
                       <legend className="block text-xs font-semibold uppercase tracking-wider text-white/90 mb-2">
                         Preferred Contact Method
                       </legend>
-                      <div className="flex items-center gap-6 pt-2">
+                      <div className="flex items-center gap-6 pt-1">
                         <label className="flex items-center gap-2 text-sm text-white/90 cursor-pointer">
                           <input
                             type="radio"

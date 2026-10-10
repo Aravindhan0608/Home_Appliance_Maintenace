@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 text-sm leading-6 text-white/70">
-              Reliable doorstep repair, preventive maintenance, and servicing for household appliances across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+              Multibrand home appliance sales, doorstep repair, preventive maintenance, and servicing for household appliances across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
             </p>
 
             <div className="mt-6 flex items-center gap-3">
@@ -165,6 +165,10 @@ export default function Footer() {
                   Mettupalayam,<br />
                   Tamil Nadu - 641301, India
                 </address>
+              </div>
+              <div className="flex items-start gap-2 pt-1">
+                <span className="text-[#f4b82b] shrink-0">Hours:</span>
+                <span className="text-white/70">Monday–Sunday: 10:00 AM–6:00 PM</span>
               </div>
             </div>
 

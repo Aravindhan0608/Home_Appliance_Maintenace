@@ -97,9 +97,9 @@ const steps = [
 
 const trustPoints = [
   {
-    title: "Expert Technicians",
+    title: "Skilled Technicians",
     description:
-      "Skilled and background-verified technicians with extensive experience across all major brands.",
+      "Skilled technicians offering multibrand repair and maintenance across household appliances.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-8 w-8" stroke="currentColor" strokeWidth="1.8">
         <path d="M24 5 8 11v10c0 10.5 6.7 18.8 16 22 9.3-3.2 16-11.5 16-22V11L24 5Z" />
@@ -108,9 +108,9 @@ const trustPoints = [
     ),
   },
   {
-    title: "Genuine Spare Parts",
+    title: "Quality Replacement Parts",
     description:
-      "100% authentic spare components ensuring long-lasting performance and complete reliability.",
+      "Quality replacement components and parts suited to your specific appliance model.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-8 w-8" stroke="currentColor" strokeWidth="1.8">
         <circle cx="24" cy="24" r="17" />
@@ -207,13 +207,13 @@ export default function Services() {
             </span>
 
             <h1 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
-              Professional Doorstep Appliance Care &amp; Repair Services
+              Multibrand Home Appliance Sales &amp; Repair Services
             </h1>
 
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              Comprehensive repair, preventive maintenance, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+              Home appliance sales guidance, comprehensive repair, preventive maintenance, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
             </p>
 
             {/* Quick scope tags */}
@@ -224,7 +224,7 @@ export default function Services() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#314a6c] bg-[#0a2145]/70 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#f4b82b]" aria-hidden="true" />
-                Genuine Replacement Parts
+                Quality Replacement Parts
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#314a6c] bg-[#0a2145]/70 px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#f4b82b]" aria-hidden="true" />
@@ -398,7 +398,7 @@ export default function Services() {
             </h2>
             <div className="mt-3.5 h-[3px] w-12 bg-[#eeb52a]" />
             <p className="mt-3 text-sm leading-6 text-white/70 sm:text-base">
-              Dedicated to professional workmanship, authentic components, and reliable doorstep service.
+              Dedicated to professional workmanship, quality components, and reliable doorstep service.
             </p>
           </div>
 

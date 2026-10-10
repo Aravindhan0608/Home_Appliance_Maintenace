@@ -442,34 +442,35 @@ export default function App() {
 
                   {/* Main heading */}
                   <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
-                    SERVICE &amp; REPAIR
+                    SALES &amp; REPAIR
                   </h1>
 
                   {/* Subtitle */}
                   <p className="mt-3 text-[18px] font-semibold uppercase tracking-wide text-[#f4b82b] sm:text-[21px]">
-                    FAST. RELIABLE. AFFORDABLE.
+                    DOORSTEP SALES &amp; SERVICE
                   </p>
 
                   <div className="mt-4 h-[3px] w-[62px] bg-[#f4b82b]" />
 
                   {/* Description */}
                   <p className="mt-5 max-w-[535px] text-[14px] leading-6 text-white/90 sm:text-[16px] sm:leading-7">
-                    We provide expert repair and maintenance services for washing
-                    machines, refrigerators, air conditioners, microwaves,
-                    dishwashers, water heaters, TVs, and other household appliances.
-                    Doorstep service with genuine spare parts and professional care.
+                    We provide home appliance sales, expert repair, and maintenance
+                    services for washing machines, refrigerators, air conditioners,
+                    microwaves, dishwashers, water heaters, TVs, and other household
+                    appliances. Doorstep service with quality replacement parts and
+                    professional care.
                   </p>
 
                   {/* Feature icons */}
                   <div className="mt-7 grid max-w-[610px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
                     <FeatureItem icon={<ShieldIcon />}>
-                      EXPERT
+                      SKILLED
                       <br />
                       TECHNICIANS
                     </FeatureItem>
 
                     <FeatureItem icon={<GenuineIcon />}>
-                      GENUINE
+                      QUALITY
                       <br />
                       SPARE PARTS
                     </FeatureItem>
@@ -596,7 +597,7 @@ export default function App() {
                     <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
                     <p className="text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
-                      We focus on dependable doorstep diagnostics, authentic components, and customer-centered care to keep your home appliances running smoothly.
+                      We focus on dependable doorstep diagnostics, quality components, and customer-centered care to keep your home appliances running smoothly.
                     </p>
 
                     <div className="mt-7">
@@ -728,8 +729,8 @@ export default function App() {
                         <div className="flex items-start gap-3 border-b border-[#314a6c]/50 pb-3">
                           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-xs font-bold text-[#f4b82b]">1</span>
                           <div>
-                            <h4 className="text-xs font-bold uppercase tracking-wide text-white">Authentic Spare Parts</h4>
-                            <p className="mt-0.5 text-xs text-white/70">Genuine replacement components for lasting performance.</p>
+                            <h4 className="text-xs font-bold uppercase tracking-wide text-white">Quality Spare Parts</h4>
+                            <p className="mt-0.5 text-xs text-white/70">Quality replacement components for lasting performance.</p>
                           </div>
                         </div>
 

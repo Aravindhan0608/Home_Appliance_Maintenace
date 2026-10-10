@@ -196,10 +196,10 @@ export default function WhyUs() {
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4 text-left">
               <div className="rounded-xl border border-[#314a6c] bg-[#0a2145]/80 p-4 transition hover:border-[#eeb52a]/60">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#f4b82b]">
-                  Authentic Parts
+                  Quality Parts
                 </span>
                 <p className="mt-1 text-xs text-white/75">
-                  100% genuine components to protect appliance life.
+                  Quality replacement parts to support appliance longevity.
                 </p>
               </div>
 
@@ -405,7 +405,7 @@ export default function WhyUs() {
                   <div>
                     <h3 className="text-sm font-bold text-white">Clean &amp; Respectful Workmanship</h3>
                     <p className="mt-1 text-xs leading-5 text-white/75 sm:text-sm">
-                      Mindful handling of your appliance, authentic parts replacement, and leaving your household workspace neat and tidy.
+                      Mindful handling of your appliance, quality parts replacement, and leaving your household workspace neat and tidy.
                     </p>
                   </div>
                 </div>

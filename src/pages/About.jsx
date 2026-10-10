@@ -87,7 +87,7 @@ export default function About() {
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              We built Service Hub with a clear purpose: to provide honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
+              We built Service Hub with a clear purpose: to provide home appliance sales assistance, honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function About() {
                     Doorstep Technicians
                   </p>
                   <p className="mt-0.5 text-xs text-white/75">
-                    Trained, verified, and customer-focused care.
+                    Attentive, customer-focused doorstep care.
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function About() {
                 </h2>
                 <div className="my-3.5 h-[2px] w-10 bg-[#eeb52a]" />
                 <p className="text-sm leading-6 text-white/75">
-                  Household appliances shouldn&apos;t require the hassle of transport, prolonged waiting, or unclear repair quotes. Our mobile specialists arrive directly at your location with proper tools and authentic components.
+                  Household appliances shouldn&apos;t require the hassle of transport, prolonged waiting, or unclear repair quotes. Our mobile specialists arrive directly at your location with proper tools and quality components.
                 </p>
               </div>
 
@@ -141,7 +141,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-[#f4b82b] font-bold">✓</span>
-                  <span>100% genuine spare components for long-lasting performance</span>
+                  <span>Quality replacement components suited for your appliance</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#f4b82b]/15 text-[#f4b82b] font-bold">✓</span>
@@ -188,7 +188,7 @@ export default function About() {
                 At Service Hub, we specialize in comprehensive home appliance solutions across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and more. When an essential appliance stops functioning, it disrupts everyday life.
               </p>
               <p>
-                Our customer-focused approach means prioritizing convenience, quick turnarounds, and clear guidance. We bring skilled workmanship and authentic spare parts right to your doorstep so you never have to deal with the hassle of moving heavy appliances.
+                Our customer-focused approach means prioritizing convenience, quick turnarounds, and clear guidance. We bring skilled workmanship and quality replacement parts right to your doorstep so you never have to deal with the hassle of moving heavy appliances.
               </p>
               <p className="text-xs text-white/65 sm:text-sm">
                 Every service visit concludes with complete operational testing, ensuring that cycles, cooling, heating, or electronic controls run exactly as intended before we consider the job done.
@@ -309,14 +309,14 @@ export default function About() {
             <div className="border-t-2 border-[#eeb52a] bg-[#0a2145]/40 p-6 pt-7 rounded-b-xl">
               <h3 className="text-base font-bold text-white">Convenient Doorstep Care</h3>
               <p className="mt-2 text-xs leading-5 text-white/75 sm:text-sm sm:leading-6">
-                Experienced technicians arrive directly at your home with tools and genuine parts, saving your time and energy.
+                Experienced technicians arrive directly at your home with tools and replacement parts, saving your time and energy.
               </p>
             </div>
 
             <div className="border-t-2 border-[#eeb52a] bg-[#0a2145]/40 p-6 pt-7 rounded-b-xl">
               <h3 className="text-base font-bold text-white">Dependable Service</h3>
               <p className="mt-2 text-xs leading-5 text-white/75 sm:text-sm sm:leading-6">
-                We prioritize thorough inspection, authentic parts, and full cycle testing to ensure lasting appliance performance.
+                We prioritize thorough inspection, quality parts, and full cycle testing to ensure lasting appliance performance.
               </p>
             </div>
           </div>
