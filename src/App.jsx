@@ -334,18 +334,26 @@ export default function App() {
 
     const metaDescriptions = {
       "/": "Service Hub provides multibrand home appliance sales and repair services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/services": "Explore home appliance repair and service options from Service Hub for washing machines, refrigerators, ACs, microwave ovens, dishwashers, geysers, TVs and other appliances.",
-      "/about": "Learn about Service Hub, a multibrand home appliance sales and service business serving Mettupalayam and nearby areas in Tamil Nadu.",
-      "/why-us": "Choose Service Hub for professional home appliance repair and service support across Mettupalayam, Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/contact": "Contact Service Hub for home appliance repair and service enquiries in Mettupalayam and nearby areas. Call 918870657575.",
+      "/services": "Explore multibrand home appliance sales and doorstep repair services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, dishwashers, and TVs.",
+      "/about": "Learn about Service Hub, a dedicated multibrand home appliance sales and doorstep repair service serving Mettupalayam and nearby areas in Tamil Nadu.",
+      "/why-us": "Discover why households choose Service Hub for multibrand appliance sales support, honest diagnostics, and doorstep repair across Mettupalayam.",
+      "/contact": "Contact Service Hub in Mettupalayam for multibrand home appliance sales and repair enquiries. Reach out by phone or WhatsApp at 8870657575.",
     };
 
     const pageTitles = {
       "/": "Service Hub | Home Appliance Sales & Repair Service",
-      "/services": "Home Appliance Repair Services in Mettupalayam | Service Hub",
-      "/about": "About Service Hub | Home Appliance Service in Mettupalayam",
-      "/why-us": "Why Choose Service Hub | Home Appliance Repair Service",
-      "/contact": "Contact Service Hub | Home Appliance Repair Service",
+      "/services": "Home Appliance Sales & Repair Services in Mettupalayam | Service Hub",
+      "/about": "About Service Hub | Appliance Sales & Service in Mettupalayam",
+      "/why-us": "Why Choose Service Hub | Multibrand Appliance Care Mettupalayam",
+      "/contact": "Contact Service Hub | Appliance Sales & Repair Enquiry Mettupalayam",
+    };
+
+    const canonicalUrls = {
+      "/": "https://homeappliancemaintenace.vercel.app/",
+      "/services": "https://homeappliancemaintenace.vercel.app/services",
+      "/about": "https://homeappliancemaintenace.vercel.app/about",
+      "/why-us": "https://homeappliancemaintenace.vercel.app/why-us",
+      "/contact": "https://homeappliancemaintenace.vercel.app/contact",
     };
 
     const normalized =
@@ -375,6 +383,48 @@ export default function App() {
     updateMetaTag("property", "og:description", descContent);
     updateMetaTag("name", "twitter:title", pageTitle);
     updateMetaTag("name", "twitter:description", descContent);
+
+    // Absolute social share image
+    const socialImage = "https://homeappliancemaintenace.vercel.app/assets/washing-machine-hero.webp";
+    updateMetaTag("property", "og:image", socialImage);
+    updateMetaTag("name", "twitter:image", socialImage);
+
+    // Canonical & og:url management
+    const canonicalUrl = canonicalUrls[normalized];
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+
+    if (canonicalUrl) {
+      if (!canonicalLink) {
+        canonicalLink = document.createElement("link");
+        canonicalLink.setAttribute("rel", "canonical");
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.setAttribute("href", canonicalUrl);
+      updateMetaTag("property", "og:url", canonicalUrl);
+    } else {
+      if (canonicalLink) {
+        canonicalLink.remove();
+      }
+      const ogUrlTag = document.querySelector('meta[property="og:url"]');
+      if (ogUrlTag) {
+        ogUrlTag.remove();
+      }
+    }
+
+    // Robots meta tag management (noindex, follow on unknown routes; remove on valid routes)
+    let robotsTag = document.querySelector('meta[name="robots"]');
+    if (canonicalUrl) {
+      if (robotsTag) {
+        robotsTag.remove();
+      }
+    } else {
+      if (!robotsTag) {
+        robotsTag = document.createElement("meta");
+        robotsTag.setAttribute("name", "robots");
+        document.head.appendChild(robotsTag);
+      }
+      robotsTag.setAttribute("content", "noindex, follow");
+    }
   }, [currentPath]);
 
   const isHomePage = currentPath === "/" || currentPath === "";
