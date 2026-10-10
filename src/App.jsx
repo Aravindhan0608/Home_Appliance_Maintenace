@@ -333,19 +333,19 @@ export default function App() {
     }
 
     const metaDescriptions = {
-      "/": "Service Hub provides multibrand home appliance sales and repair services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/services": "Explore multibrand home appliance sales and doorstep repair services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, dishwashers, and TVs.",
-      "/about": "Learn about Service Hub, a dedicated multibrand home appliance sales and doorstep repair service serving Mettupalayam and nearby areas in Tamil Nadu.",
-      "/why-us": "Discover why households choose Service Hub for multibrand appliance sales support, honest diagnostics, and doorstep repair across Mettupalayam.",
-      "/contact": "Contact Service Hub in Mettupalayam for multibrand home appliance sales and repair enquiries. Reach out by phone or WhatsApp at 8870657575.",
+      "/": "Service Hub provides multibrand home appliance repair and maintenance services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
+      "/services": "Explore multibrand home appliance repair and doorstep maintenance services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, dishwashers, and TVs.",
+      "/about": "Learn about Service Hub, a dedicated multibrand home appliance repair and doorstep maintenance service serving Mettupalayam and nearby areas in Tamil Nadu.",
+      "/why-us": "Discover why households choose Service Hub for multibrand appliance care, honest diagnostics, and doorstep repair across Mettupalayam.",
+      "/contact": "Contact Service Hub in Mettupalayam for multibrand home appliance repair and service enquiries. Reach out by phone or WhatsApp at 8870657575.",
     };
 
     const pageTitles = {
-      "/": "Service Hub | Home Appliance Sales & Repair Service",
-      "/services": "Home Appliance Sales & Repair Services in Mettupalayam | Service Hub",
-      "/about": "About Service Hub | Appliance Sales & Service in Mettupalayam",
+      "/": "Service Hub | Home Appliance Repair & Maintenance",
+      "/services": "Home Appliance Repair Services in Mettupalayam | Service Hub",
+      "/about": "About Service Hub | Home Appliance Services in Mettupalayam",
       "/why-us": "Why Choose Service Hub | Multibrand Appliance Care Mettupalayam",
-      "/contact": "Contact Service Hub | Appliance Sales & Repair Enquiry Mettupalayam",
+      "/contact": "Contact Service Hub | Appliance Repair Services in Mettupalayam",
     };
 
     const canonicalUrls = {
@@ -366,7 +366,7 @@ export default function App() {
 
     const descContent =
       metaDescriptions[normalized] ||
-      "Page not found. Return to Service Hub for home appliance sales and repair services.";
+      "Page not found. Return to Service Hub for home appliance repair and maintenance services.";
 
     const updateMetaTag = (attribute, name, content) => {
       let tag = document.querySelector(`meta[${attribute}="${name}"]`);
@@ -492,20 +492,20 @@ export default function App() {
 
                   {/* Main heading */}
                   <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
-                    SALES &amp; REPAIR
+                    REPAIR &amp; SERVICE
                   </h1>
 
                   {/* Subtitle */}
                   <p className="mt-3 text-[18px] font-semibold uppercase tracking-wide text-[#f4b82b] sm:text-[21px]">
-                    DOORSTEP SALES &amp; SERVICE
+                    DOORSTEP REPAIR &amp; MAINTENANCE
                   </p>
 
                   <div className="mt-4 h-[3px] w-[62px] bg-[#f4b82b]" />
 
                   {/* Description */}
                   <p className="mt-5 max-w-[535px] text-[14px] leading-6 text-white/90 sm:text-[16px] sm:leading-7">
-                    We provide home appliance sales, expert repair, and maintenance
-                    services for washing machines, refrigerators, air conditioners,
+                    We provide home appliance repair, maintenance, installation, and
+                    cleaning services for washing machines, refrigerators, air conditioners,
                     microwaves, dishwashers, water heaters, TVs, and other household
                     appliances. Doorstep service with quality replacement parts and
                     professional care.

@@ -87,7 +87,7 @@ export default function About() {
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              We built Service Hub with a clear purpose: to provide home appliance sales assistance, honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
+              We built Service Hub with a clear purpose: to provide home appliance repair and maintenance services, honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
             </p>
           </div>
 

@@ -185,10 +185,10 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
                 Service Hub Enquiry Desk
               </span>
               <h1 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                Doorstep Appliance Sales &amp; Repair Service
+                Doorstep Appliance Repair &amp; Service
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/75 sm:text-base">
-                Call our direct phone line, chat on WhatsApp to discuss appliance sales or service faults, or submit the enquiry form below for prompt doorstep scheduling.
+                Call our direct phone line, chat on WhatsApp to discuss appliance repair or service faults, or submit the enquiry form below for prompt doorstep scheduling.
               </p>
             </div>
 

@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 text-sm leading-6 text-white/70">
-              Multibrand home appliance sales, doorstep repair, preventive maintenance, and servicing for household appliances across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+              Multibrand home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
             </p>
 
             <div className="mt-6 flex items-center gap-3">

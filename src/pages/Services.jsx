@@ -207,13 +207,13 @@ export default function Services() {
             </span>
 
             <h1 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
-              Multibrand Home Appliance Sales &amp; Repair Services
+              Multibrand Home Appliance Repair &amp; Maintenance Services
             </h1>
 
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              Home appliance sales guidance, comprehensive repair, preventive maintenance, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+              Comprehensive home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
             </p>
 
             {/* Quick scope tags */}
