@@ -163,9 +163,9 @@ const faqs = [
       "Yes, our service technicians provide convenient doorstep service. They arrive at your home equipped with professional diagnostic tools and replacement parts to inspect and service your appliances on-site.",
   },
   {
-    question: "How can I contact Service Hub?",
+    question: "How can I contact FYXO?",
     answer:
-      "You can contact Service Hub by telephone at +91 8870657575 or through the Contact section on our website.",
+      "You can contact FYXO by telephone at 8870657575 or through the Contact section on our website.",
   },
 ];
 
@@ -203,7 +203,7 @@ export default function Services() {
 
           <div className="max-w-[840px]">
             <span className="inline-block rounded-full border border-[#f4b82b]/30 bg-[#f4b82b]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[2px] text-[#f4b82b]">
-              Service Hub Expertise
+              FYXO Expertise
             </span>
 
             <h1 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
@@ -378,7 +378,7 @@ export default function Services() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#314a6c]/40 text-[11px] font-medium text-white/50 uppercase tracking-wider">
-                  Service Hub Workflow
+                  FYXO Workflow
                 </div>
               </div>
             ))}

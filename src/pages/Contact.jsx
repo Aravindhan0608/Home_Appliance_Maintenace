@@ -142,7 +142,7 @@ export default function Contact() {
 
     setErrors({});
 
-    const textContent = `*New Service Enquiry - Service Hub*
+    const textContent = `*New Service Enquiry - FYXO*
 *Full Name:* ${formData.fullName.trim()}
 *Phone Number:* ${formData.phone.trim()}
 ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${formData.email.trim() ? `*Email:* ${formData.email.trim()}\n` : ""}*Appliance:* ${formData.appliance}
@@ -182,7 +182,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <span className="inline-block text-xs font-bold uppercase tracking-[2.5px] text-[#f4b82b]">
-                Service Hub Enquiry Desk
+                FYXO Enquiry Desk
               </span>
               <h1 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
                 Doorstep Appliance Repair &amp; Service

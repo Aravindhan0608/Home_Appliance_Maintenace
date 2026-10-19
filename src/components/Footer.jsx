@@ -31,12 +31,12 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src="/assets/logo.jpeg"
-                alt="Service Hub"
+                alt="FYXO"
                 className="h-14 w-14 rounded-full object-cover"
               />
               <div>
                 <span className="font-serif text-xl font-bold tracking-tight text-white">
-                  SERVICE HUB
+                  FYXO
                 </span>
                 <p className="text-xs uppercase tracking-[2px] text-[#f4b82b]">
                   Home Appliance Care
@@ -189,7 +189,7 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright & BottomNavbar clearance */}
         <div className="mt-12 border-t border-[#263d61]/60 pt-6 text-center text-xs text-white/75 pb-20 sm:pb-0">
-          <p>© {currentYear} Service Hub. All rights reserved.</p>
+          <p>© {currentYear} FYXO. All rights reserved.</p>
         </div>
       </div>
     </footer>

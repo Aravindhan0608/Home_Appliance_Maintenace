@@ -179,7 +179,7 @@ export default function WhyUs() {
           {/* Centered High-Trust Header */}
           <div className="mx-auto max-w-[860px] text-center">
             <span className="inline-block rounded-full border border-[#f4b82b]/30 bg-[#f4b82b]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[2px] text-[#f4b82b]">
-              Why Choose Service Hub
+              Why Choose FYXO
             </span>
 
             <h1 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-[54px] lg:leading-tight">
@@ -239,7 +239,7 @@ export default function WhyUs() {
         <div className="mx-auto max-w-[1380px]">
           <div className="mb-12 max-w-2xl sm:mb-14">
             <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-              The Service Hub Difference
+              The FYXO Difference
             </span>
             <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
               What Sets Our Service Apart
@@ -494,7 +494,7 @@ export default function WhyUs() {
                 Reliable Doorstep Care
               </span>
               <h2 className="mt-2 font-serif text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-                Experience the Service Hub Standard
+                Experience the FYXO Standard
               </h2>
               <p className="mt-2 max-w-xl text-xs leading-5 text-white/70 sm:text-sm sm:leading-6">
                 Explore our full service options across household appliances or contact our service desk directly for doorstep booking.

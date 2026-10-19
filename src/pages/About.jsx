@@ -77,7 +77,7 @@ export default function About() {
           {/* Editorial Heading Block */}
           <div className="max-w-[900px]">
             <span className="inline-block rounded-full border border-[#f4b82b]/30 bg-[#f4b82b]/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[2px] text-[#f4b82b]">
-              About Service Hub
+              About FYXO
             </span>
 
             <h1 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-[54px] lg:leading-[1.12]">
@@ -87,7 +87,7 @@ export default function About() {
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              We built Service Hub with a clear purpose: to provide home appliance repair and maintenance services, honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
+              We built FYXO with a clear purpose: to provide home appliance repair and maintenance services, honest diagnostics, skilled workmanship, and dependable doorstep service for the appliances your home relies on every single day.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function About() {
                 <div className="overflow-hidden rounded-xl h-full">
                   <img
                     src="/about.webp"
-                    alt="Service Hub dedicated service team"
+                    alt="FYXO dedicated service team"
                     loading="eager"
                     fetchPriority="high"
                     className="h-[420px] w-full object-contain sm:h-[500px] lg:h-full"
@@ -185,7 +185,7 @@ export default function About() {
 
             <div className="space-y-4 text-sm leading-7 text-white/80 sm:text-base lg:col-span-7">
               <p>
-                At Service Hub, we specialize in comprehensive home appliance solutions across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and more. When an essential appliance stops functioning, it disrupts everyday life.
+                At FYXO, we specialize in comprehensive home appliance solutions across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and more. When an essential appliance stops functioning, it disrupts everyday life.
               </p>
               <p>
                 Our customer-focused approach means prioritizing convenience, quick turnarounds, and clear guidance. We bring skilled workmanship and quality replacement parts right to your doorstep so you never have to deal with the hassle of moving heavy appliances.
@@ -274,7 +274,7 @@ export default function About() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#314a6c]/40 text-[11px] font-semibold text-[#f4b82b]/70 uppercase tracking-wider">
-                  Service Hub Value
+                  FYXO Value
                 </div>
               </div>
             ))}

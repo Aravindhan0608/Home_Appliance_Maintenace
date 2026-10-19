@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { navigateTo } from "../utils/navigation";
 
 const navItems = [
@@ -84,6 +84,8 @@ export default function Navbar() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const [currentHash, setCurrentHash] = useState(window.location.hash);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const hamburgerButtonRef = useRef(null);
 
   useEffect(() => {
     const handleLocationChange = () => {
@@ -98,23 +100,61 @@ export default function Navbar() {
       }
     };
 
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
     window.addEventListener("popstate", handleLocationChange);
     window.addEventListener("hashchange", handleLocationChange);
     window.addEventListener("resize", handleResize);
-    window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("popstate", handleLocationChange);
       window.removeEventListener("hashchange", handleLocationChange);
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const timer = setTimeout(() => {
+      const firstLink = menuRef.current?.querySelector("a");
+      if (firstLink) {
+        firstLink.focus();
+      }
+    }, 0);
+
+    const handleMenuKeyDown = (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+        hamburgerButtonRef.current?.focus();
+        return;
+      }
+
+      if (e.key === "Tab") {
+        const focusableElements = menuRef.current?.querySelectorAll("a");
+        if (!focusableElements || focusableElements.length === 0) return;
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement || !menuRef.current.contains(document.activeElement)) {
+            e.preventDefault();
+            lastElement.focus();
+          }
+        } else {
+          if (document.activeElement === lastElement || !menuRef.current.contains(document.activeElement)) {
+            e.preventDefault();
+            firstElement.focus();
+          }
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleMenuKeyDown);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("keydown", handleMenuKeyDown);
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -129,11 +169,11 @@ export default function Navbar() {
               navigateTo("/");
             }}
             className="flex shrink-0 items-center"
-            aria-label="Service Hub Home"
+            aria-label="FYXO Home"
           >
             <img
               src="/assets/logo.jpeg"
-              alt="Service Hub"
+              alt="FYXO"
               className="h-[52px] w-[52px] rounded-full object-cover sm:h-[58px] sm:w-[58px] lg:h-[62px] lg:w-[62px]"
             />
           </a>
@@ -171,7 +211,7 @@ export default function Navbar() {
             {/* Desktop / Tablet Phone */}
             <a
               href="tel:+918870657575"
-              aria-label="Call Service Hub at 8870657575"
+              aria-label="Call FYXO at 8870657575"
               className="hidden items-center gap-2.5 rounded-full border border-[#e9ad21] px-5 py-2 text-white transition duration-300 hover:bg-[#e9ad21] hover:text-[#071a39] sm:flex lg:py-2.5"
             >
               <PhoneIcon />
@@ -184,13 +224,14 @@ export default function Navbar() {
             <a
               href="tel:+918870657575"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e9ad21] text-[#f5bb2f] sm:hidden"
-              aria-label="Call Service Hub at 8870657575"
+              aria-label="Call FYXO at 8870657575"
             >
               <PhoneIcon />
             </a>
 
             {/* Mobile / Tablet Hamburger Button */}
             <button
+              ref={hamburgerButtonRef}
               type="button"
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               className="flex h-10 w-10 items-center justify-center rounded-lg border border-[#314a6c] bg-[#0a2145] text-white transition duration-200 hover:border-[#eeb52a] hover:text-[#f5bb2f] focus:outline-none focus:ring-2 focus:ring-[#eeb52a] lg:hidden"
@@ -206,6 +247,7 @@ export default function Navbar() {
         {/* Mobile / Tablet Dropdown Menu */}
         {isMobileMenuOpen && (
           <div
+            ref={menuRef}
             id="mobile-navigation-menu"
             className="max-h-[calc(100vh-72px)] sm:max-h-[calc(100vh-76px)] overflow-y-auto border-t border-[#263d61]/60 bg-[#061a3a]/98 px-5 pb-24 pt-4 shadow-2xl backdrop-blur-xl sm:pb-6 lg:hidden"
           >

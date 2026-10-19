@@ -333,19 +333,19 @@ export default function App() {
     }
 
     const metaDescriptions = {
-      "/": "Service Hub provides multibrand home appliance repair and maintenance services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
+      "/": "FYXO provides multibrand home appliance repair and maintenance services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
       "/services": "Explore multibrand home appliance repair and doorstep maintenance services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, dishwashers, and TVs.",
-      "/about": "Learn about Service Hub, a dedicated multibrand home appliance repair and doorstep maintenance service serving Mettupalayam and nearby areas in Tamil Nadu.",
-      "/why-us": "Discover why households choose Service Hub for multibrand appliance care, honest diagnostics, and doorstep repair across Mettupalayam.",
-      "/contact": "Contact Service Hub in Mettupalayam for multibrand home appliance repair and service enquiries. Reach out by phone or WhatsApp at 8870657575.",
+      "/about": "Learn about FYXO, a dedicated multibrand home appliance repair and doorstep maintenance service serving Mettupalayam and nearby areas in Tamil Nadu.",
+      "/why-us": "Discover why households choose FYXO for multibrand appliance care, honest diagnostics, and doorstep repair across Mettupalayam.",
+      "/contact": "Contact FYXO in Mettupalayam for multibrand home appliance repair and service enquiries. Reach out by phone or WhatsApp at 8870657575.",
     };
 
     const pageTitles = {
-      "/": "Service Hub | Home Appliance Repair & Maintenance",
-      "/services": "Home Appliance Repair Services in Mettupalayam | Service Hub",
-      "/about": "About Service Hub | Home Appliance Services in Mettupalayam",
-      "/why-us": "Why Choose Service Hub | Multibrand Appliance Care Mettupalayam",
-      "/contact": "Contact Service Hub | Appliance Repair Services in Mettupalayam",
+      "/": "FYXO | Home Appliance Repair & Maintenance",
+      "/services": "Home Appliance Repair Services in Mettupalayam | FYXO",
+      "/about": "About FYXO | Home Appliance Services in Mettupalayam",
+      "/why-us": "Why Choose FYXO | Multibrand Appliance Care Mettupalayam",
+      "/contact": "Contact FYXO | Appliance Repair Services in Mettupalayam",
     };
 
     const canonicalUrls = {
@@ -361,12 +361,12 @@ export default function App() {
         ? currentPath.slice(0, -1)
         : currentPath;
 
-    const pageTitle = pageTitles[normalized] || "Page Not Found | Service Hub";
+    const pageTitle = pageTitles[normalized] || "Page Not Found | FYXO";
     document.title = pageTitle;
 
     const descContent =
       metaDescriptions[normalized] ||
-      "Page not found. Return to Service Hub for home appliance repair and maintenance services.";
+      "Page not found. Return to FYXO for home appliance repair and maintenance services.";
 
     const updateMetaTag = (attribute, name, content) => {
       let tag = document.querySelector(`meta[${attribute}="${name}"]`);
@@ -637,7 +637,7 @@ export default function App() {
                   {/* Left Column: Anchor message */}
                   <div className="lg:col-span-5">
                     <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                      The Service Hub Standard
+                      The FYXO Standard
                     </span>
 
                     <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl lg:leading-tight">
@@ -733,7 +733,7 @@ export default function App() {
                   {/* Left Editorial Narrative */}
                   <div className="lg:col-span-7">
                     <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
-                      About Service Hub
+                      About FYXO
                     </span>
 
                     <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -802,6 +802,43 @@ export default function App() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            {/* ================= AREAS WE SERVE ================= */}
+            <section className="border-b border-[#314a6c]/40 bg-[#071d40] px-6 py-16 sm:px-10 sm:py-20 lg:px-12">
+              <div className="mx-auto max-w-[1380px]">
+                <div className="mb-10 max-w-2xl sm:mb-12">
+                  <span className="text-xs font-semibold uppercase tracking-[3px] text-[#f4b82b]">
+                    Service Coverage
+                  </span>
+                  <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Areas We Serve
+                  </h2>
+                  <div className="mt-3.5 h-[3px] w-12 bg-[#eeb52a]" />
+                  <p className="mt-3 text-sm leading-6 text-white/75 sm:text-base">
+                    Doorstep home appliance repair and maintenance services across these confirmed locations.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 sm:gap-4">
+                  {[
+                    "Mettupalayam",
+                    "Sirumugai",
+                    "Karamadai",
+                    "Annur",
+                    "Periyanaikanpalayam",
+                  ].map((area) => (
+                    <div
+                      key={area}
+                      className="flex items-center justify-center rounded-xl border border-[#314a6c] bg-[#0a2145]/60 px-4 py-3.5 text-center transition duration-200 hover:border-[#eeb52a]/60"
+                    >
+                      <span className="text-sm font-semibold tracking-wide text-white sm:text-base">
+                        {area}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </section>

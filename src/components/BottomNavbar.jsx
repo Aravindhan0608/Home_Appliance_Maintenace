@@ -145,7 +145,7 @@ export default function BottomNavbar() {
   }, []);
 
   return (
-    <nav aria-label="Mobile Bottom Navigation" className="fixed bottom-0 left-0 right-0 z-[100] border-t border-[#263d61] bg-[#061936]/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.25)] backdrop-blur-lg sm:hidden">
+    <nav aria-label="Mobile Bottom Navigation" className="fixed bottom-0 left-0 right-0 z-30 border-t border-[#263d61] bg-[#061936]/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.25)] backdrop-blur-lg sm:hidden">
       <div className="mx-auto flex h-[68px] max-w-md items-center justify-around">
         {items.map((item) => {
           const Icon = item.icon;
