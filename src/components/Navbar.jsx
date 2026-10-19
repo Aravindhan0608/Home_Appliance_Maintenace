@@ -172,9 +172,9 @@ export default function Navbar() {
             aria-label="FYXO Home"
           >
             <img
-              src="/assets/logo.webp"
+              src="/assets/FYXO.png"
               alt="FYXO"
-              className="h-[52px] w-[52px] rounded-full object-cover sm:h-[58px] sm:w-[58px] lg:h-[62px] lg:w-[62px]"
+              className="h-10 w-auto object-contain sm:h-11 lg:h-12"
             />
           </a>
 
