@@ -174,7 +174,7 @@ export default function Navbar() {
             <img
               src="/assets/FYXO.png"
               alt="FYXO"
-              className="h-10 w-auto object-contain sm:h-11 lg:h-12"
+              className="w-26 h-6 sm:w-28 sm:h-7 lg:w-32 lg:h-8 object-contain"
             />
           </a>
 

@@ -32,7 +32,7 @@ export default function Footer() {
               <img
                 src="/assets/FYXO.png"
                 alt="FYXO"
-                className="h-10 w-auto object-contain sm:h-11"
+                className="w-26 h-6 sm:w-28 sm:h-7 object-contain"
               />
               <div>
                 <span className="font-serif text-xl font-bold tracking-tight text-white">
