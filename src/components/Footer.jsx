@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/logo.jpeg"
+                src="/assets/logo.webp"
                 alt="FYXO"
                 className="h-14 w-14 rounded-full object-cover"
               />
