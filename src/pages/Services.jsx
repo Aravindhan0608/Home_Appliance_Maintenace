@@ -43,28 +43,12 @@ const services = [
     alt: "Dishwasher repair service",
   },
   {
-    id: "geyser",
-    title: "Water Heater / Geyser Service",
-    description:
-      "Thermostat inspection, heating element replacement, pressure valve safety checks, and leak prevention for instant and storage geysers.",
-    image: "/assets/appliances/heater.png",
-    alt: "Water heater and geyser service",
-  },
-  {
     id: "tv",
     title: "Television (TV) Repair",
     description:
       "Screen display panel diagnostics, audio/speaker fixes, power supply board repairs, and HDMI/input port connectivity troubleshooting.",
     image: "/assets/appliances/tv.png",
     alt: "Television repair service",
-  },
-  {
-    id: "other",
-    title: "Other Home Appliances",
-    description:
-      "Reliable inspection and repair for other essential household electrical appliances with professional care and quality components.",
-    image: "/assets/appliances/other-appliances.png",
-    alt: "Home appliance repair service",
   },
 ];
 
@@ -150,7 +134,7 @@ const faqs = [
   {
     question: "Which home appliance services are available?",
     answer:
-      "We provide comprehensive repair, preventive maintenance, and servicing for washing machines, refrigerators, air conditioners (AC), microwave ovens, dishwashers, water heaters (geysers), TVs, and other household appliances.",
+      "We provide comprehensive repair, preventive maintenance, and servicing for washing machines, refrigerators, air conditioners (AC), microwave ovens, dishwashers, and TVs.",
   },
   {
     question: "How can I request an appliance service?",
@@ -213,7 +197,7 @@ export default function Services() {
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              Comprehensive home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+              Comprehensive home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and televisions.
             </p>
 
             {/* Quick scope tags */}
@@ -241,7 +225,7 @@ export default function Services() {
                 href="#services-list"
                 className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-[#f7c23c] to-[#eaaa1e] px-7 py-3 text-xs font-bold uppercase tracking-wider text-[#071a39] shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-[#f0b52a]/25"
               >
-                Browse 8 Appliances
+                Browse Appliances
               </a>
 
               <a
@@ -276,8 +260,8 @@ export default function Services() {
             </p>
           </div>
 
-          {/* 8 Services Grid */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
                 key={service.id}

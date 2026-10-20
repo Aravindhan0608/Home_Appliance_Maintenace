@@ -51,28 +51,12 @@ const services = [
     alt: "Dishwasher repair service",
   },
   {
-    title: "WATER HEATER /",
-    title2: "GEYSER",
-    description:
-      "Thermostat checkup, heating element replacement, and safe leak prevention.",
-    image: "/assets/appliances/heater.png",
-    alt: "Water heater and geyser service",
-  },
-  {
     title: "TELEVISION",
     title2: "(TV)",
     description:
       "Display panel diagnostics, sound/audio fixes, and power supply repairs.",
     image: "/assets/appliances/tv.png",
     alt: "Television repair service",
-  },
-  {
-    title: "OTHER HOME",
-    title2: "APPLIANCES",
-    description:
-      "Reliable inspection and doorstep servicing for other essential home appliances.",
-    image: "/assets/appliances/other-appliances.png",
-    alt: "Home appliance repair service",
   },
 ];
 
@@ -405,12 +389,12 @@ export default function App() {
                 <div className="w-full pt-8 sm:pt-12 lg:w-[52%] lg:pt-[88px]">
                   {/* Small heading */}
                   <p className="mb-2 text-[19px] font-semibold tracking-wide text-[#f4b82b] sm:text-[23px]">
-                    HOME APPLIANCE
+                    MULTIBRAND HOME APPLIANCE
                   </p>
 
                   {/* Main heading */}
                   <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
-                    REPAIR &amp; SERVICE
+                    SALES &amp; SERVICE
                   </h1>
 
                   {/* Subtitle */}
@@ -422,11 +406,17 @@ export default function App() {
 
                   {/* Description */}
                   <p className="mt-5 max-w-[535px] text-[14px] leading-6 text-white/90 sm:text-[16px] sm:leading-7">
-                    We provide home appliance repair, maintenance, installation, and
-                    cleaning services for washing machines, refrigerators, air conditioners,
-                    microwaves, dishwashers, water heaters, TVs, and other household
-                    appliances. Doorstep service with quality replacement parts and
-                    professional care.
+                    Air Conditioner – AC Repair | AC Installation | AC Servicing | AC Gas Charging
+
+                    Washing Machine – Washing Machine Repair | Washing Machine Maintenances
+
+                    Refrigerator – Refrigerator Repair | Refrigerator Gas Charging
+
+                    Television – LED TV Repair | LCD TV Repair | Plasma TV Repair
+
+                    Microwave Oven – Microwave Oven Repair | Microwave Oven Servicing
+                    
+                    Audio System Servicing and Repair
                   </p>
 
                   {/* Feature icons */}
@@ -504,13 +494,13 @@ export default function App() {
                     }}
                     className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#f4b82b] transition hover:text-[#ffd666]"
                   >
-                    <span>Explore All 8 Categories</span>
+                    <span>Explore All Categories</span>
                     <ArrowIcon />
                   </a>
                 </div>
 
                 {/* Service discovery cards */}
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {services.map((service) => (
                     <a
                       key={service.title + service.title2}
@@ -522,11 +512,12 @@ export default function App() {
                       className="group flex min-h-[210px] flex-col justify-between rounded-xl border border-[#314a6c] bg-[#0a2145]/50 p-5 text-left transition duration-300 hover:-translate-y-1 hover:border-[#eeb52a] hover:bg-[#0d284f]"
                     >
                       <div>
-                        <div className="mb-3.5 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-[#061a3a] text-[#f4b82b] transition duration-300 group-hover:scale-105 group-hover:border group-hover:border-[#eeb52a]/40">
+                        <div className="mb-4 overflow-hidden rounded-xl border border-[#314a6c] bg-[#061a3a] transition duration-300 group-hover:border-[#eeb52a]">
                           <img
                             src={service.image}
                             alt={service.alt}
-                            className="h-full w-full rounded-lg object-cover"
+                            loading="lazy"
+                            className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                           />
                         </div>
 

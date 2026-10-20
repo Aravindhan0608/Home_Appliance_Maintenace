@@ -7,9 +7,7 @@ const applianceCategories = [
   "Air Conditioner (AC)",
   "Microwave Oven",
   "Dishwasher",
-  "Water Heater / Geyser",
   "TV",
-  "Other Home Appliances",
 ];
 
 const serviceOptions = [
@@ -315,7 +313,7 @@ ${formData.serviceArea ? `*Service Area:* ${formData.serviceArea}\n` : ""}${form
                     Appliance Coverage
                   </p>
                   <p className="mt-1.5 text-xs leading-5 text-white/70">
-                    Washing Machines, Refrigerators, Air Conditioners, Microwave Ovens, Dishwashers, Water Heaters, TVs, and more.
+                    Washing Machines, Refrigerators, Air Conditioners, Microwave Ovens, Dishwashers, and TVs.
                   </p>
                 </div>
               </div>

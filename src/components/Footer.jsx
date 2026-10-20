@@ -14,9 +14,7 @@ const applianceServices = [
   "Air Conditioner (AC)",
   "Microwave Oven",
   "Dishwasher",
-  "Water Heater / Geyser",
   "TV",
-  "Other Home Appliances",
 ];
 
 export default function Footer() {
@@ -45,7 +43,17 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 text-sm leading-6 text-white/70">
-              Multibrand home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, water heaters, and televisions.
+               Air Conditioner – AC Repair | AC Installation | AC Servicing | AC Gas Charging
+
+                Washing Machine – Washing Machine Repair | Washing Machine Maintenances
+
+                Refrigerator – Refrigerator Repair | Refrigerator Gas Charging
+
+                Television – LED TV Repair | LCD TV Repair | Plasma TV Repair
+
+                Microwave Oven – Microwave Oven Repair | Microwave Oven Servicing
+
+                Audio System Servicing and Repair
             </p>
 
             <div className="mt-6 flex items-center gap-3">
