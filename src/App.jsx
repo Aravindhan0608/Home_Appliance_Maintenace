@@ -15,56 +15,64 @@ const services = [
     title2: "MACHINE",
     description:
       "Expert repair and maintenance for front load, top load, and semi-automatic units.",
-    icon: "washer",
+    image: "/assets/appliances/washing-machine.png",
+    alt: "Washing machine repair service",
   },
   {
     title: "REFRIGERATOR /",
     title2: "FRIDGE",
     description:
       "Cooling diagnostics, compressor servicing, gas charging, and thermostat fixes.",
-    icon: "fridge",
+    image: "/assets/appliances/refrigerator.png",
+    alt: "Refrigerator and fridge service",
   },
   {
     title: "AIR CONDITIONER",
     title2: "(AC)",
     description:
       "Doorstep AC maintenance, cooling restoration, coil cleaning, and leak checks.",
-    icon: "ac",
+    image: "/assets/appliances/air-conditioner.png",
+    alt: "Air conditioner repair service",
   },
   {
     title: "MICROWAVE",
     title2: "OVEN",
     description:
       "Heating fault repairs, magnetron replacements, and touch panel troubleshooting.",
-    icon: "microwave",
+    image: "/assets/appliances/microwave-oven.png",
+    alt: "Microwave oven repair service",
   },
   {
     title: "DISHWASHER",
     title2: "SERVICE",
     description:
       "Wash pump repairs, drainage clearing, spray arm fixes, and cycle restoration.",
-    icon: "dishwasher",
+    image: "/assets/appliances/dishwasher.png",
+    alt: "Dishwasher repair service",
   },
   {
     title: "WATER HEATER /",
     title2: "GEYSER",
     description:
       "Thermostat checkup, heating element replacement, and safe leak prevention.",
-    icon: "geyser",
+    image: "/assets/appliances/heater.png",
+    alt: "Water heater and geyser service",
   },
   {
     title: "TELEVISION",
     title2: "(TV)",
     description:
       "Display panel diagnostics, sound/audio fixes, and power supply repairs.",
-    icon: "tv",
+    image: "/assets/appliances/tv.png",
+    alt: "Television repair service",
   },
   {
     title: "OTHER HOME",
     title2: "APPLIANCES",
     description:
       "Reliable inspection and doorstep servicing for other essential home appliances.",
-    icon: "other",
+    image: "/assets/appliances/other-appliances.png",
+    alt: "Home appliance repair service",
   },
 ];
 
@@ -155,97 +163,7 @@ function ArrowIcon() {
   );
 }
 
-function ServiceIcon({ type }) {
-  if (type === "washer") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="8" y="6" width="32" height="36" rx="3" />
-        <path d="M8 14h32" />
-        <circle cx="24" cy="28" r="9" />
-        <circle cx="24" cy="28" r="5" />
-        <path d="M14 10h.01M18 10h.01M34 10h.01" />
-      </svg>
-    );
-  }
 
-  if (type === "fridge") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="11" y="6" width="26" height="36" rx="3" />
-        <path d="M11 20h26" />
-        <path d="M16 11v5M16 25v7" />
-        <path d="M11 38h26" />
-      </svg>
-    );
-  }
-
-  if (type === "ac") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="6" y="10" width="36" height="18" rx="2" />
-        <path d="M10 21h28" />
-        <path d="M36 15h2" />
-        <path d="m14 34 3 6M24 34v6M34 34l-3 6" />
-      </svg>
-    );
-  }
-
-  if (type === "microwave") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="7" y="11" width="34" height="26" rx="3" />
-        <rect x="11" y="15" width="20" height="18" rx="1.5" />
-        <circle cx="36" cy="18" r="2" />
-        <circle cx="36" cy="26" r="2" />
-        <path d="M34 33h4" />
-      </svg>
-    );
-  }
-
-  if (type === "dishwasher") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="8" y="7" width="32" height="34" rx="3" />
-        <path d="M8 15h32" />
-        <circle cx="15" cy="11" r="1.5" />
-        <circle cx="21" cy="11" r="1.5" />
-        <circle cx="24" cy="28" r="7" />
-        <path d="M19 28h10M24 23v10" />
-      </svg>
-    );
-  }
-
-  if (type === "geyser") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="14" y="6" width="20" height="34" rx="10" />
-        <circle cx="24" cy="20" r="4" />
-        <path d="M24 18v4" />
-        <path d="M19 40v3M29 40v3" />
-        <path d="M21 28h6" />
-      </svg>
-    );
-  }
-
-  if (type === "tv") {
-    return (
-      <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-        <rect x="6" y="8" width="36" height="26" rx="2" />
-        <path d="M17 40h14" />
-        <path d="M24 34v6" />
-        <path d="M11 30h26" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" stroke="currentColor" strokeWidth="1.8">
-      <circle cx="24" cy="24" r="16" />
-      <path d="m20 20 8 8M28 20l-8 8" />
-      <path d="M24 8v4M24 36v4M8 24h4M36 24h4" />
-    </svg>
-  );
-}
 
 function MedalIcon() {
   return (
@@ -604,8 +522,12 @@ export default function App() {
                       className="group flex min-h-[210px] flex-col justify-between rounded-xl border border-[#314a6c] bg-[#0a2145]/50 p-5 text-left transition duration-300 hover:-translate-y-1 hover:border-[#eeb52a] hover:bg-[#0d284f]"
                     >
                       <div>
-                        <div className="mb-3.5 flex h-12 w-12 items-center justify-center rounded-lg bg-[#061a3a] text-[#f4b82b] transition duration-300 group-hover:scale-105 group-hover:border group-hover:border-[#eeb52a]/40">
-                          <ServiceIcon type={service.icon} />
+                        <div className="mb-3.5 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-[#061a3a] text-[#f4b82b] transition duration-300 group-hover:scale-105 group-hover:border group-hover:border-[#eeb52a]/40">
+                          <img
+                            src={service.image}
+                            alt={service.alt}
+                            className="h-full w-full rounded-lg object-cover"
+                          />
                         </div>
 
                         <h3 className="text-sm font-bold leading-5 text-white transition group-hover:text-[#f4b82b]">
