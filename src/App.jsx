@@ -366,7 +366,7 @@ export default function App() {
 
                   {/* Main heading */}
                   <h1 className="font-serif text-[44px] font-bold uppercase leading-[0.98] tracking-[-1px] text-white sm:text-[56px] lg:text-[58px] xl:text-[62px]">
-                    SALES &amp; SERVICE
+                    Multibrand Home Appliance Sales &amp; Service
                   </h1>
 
                   {/* Subtitle */}
