@@ -51,8 +51,6 @@ export default function Footer() {
                 Television – LED TV Repair | LCD TV Repair | Plasma TV Repair
 
                 Microwave Oven – Microwave Oven Repair | Microwave Oven Servicing
-
-                Audio System Servicing and Repair
             </p>
 
             <div className="mt-6 flex items-center gap-3">

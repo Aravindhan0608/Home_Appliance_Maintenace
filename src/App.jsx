@@ -387,8 +387,6 @@ export default function App() {
                     Television – LED TV Repair | LCD TV Repair | Plasma TV Repair
 
                     Microwave Oven – Microwave Oven Repair | Microwave Oven Servicing
-                    
-                    Audio System Servicing and Repair
                   </p>
 
                   {/* Feature icons */}
