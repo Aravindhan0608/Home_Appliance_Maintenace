@@ -8,6 +8,7 @@ import WhyUs from "./pages/WhyUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { navigateTo } from "./utils/navigation";
+import { routesMetadata } from "./routesMetadata";
 
 const services = [
   {
@@ -226,41 +227,18 @@ export default function App() {
       }
     }
 
-    const metaDescriptions = {
-      "/": "FYXO provides multibrand home appliance repair and maintenance services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/services": "Explore multibrand home appliance repair and doorstep maintenance services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, and TVs.",
-      "/about": "Learn about FYXO, a dedicated multibrand home appliance repair and doorstep maintenance service serving Mettupalayam and nearby areas in Tamil Nadu.",
-      "/why-us": "Discover why households choose FYXO for multibrand appliance care, honest diagnostics, and doorstep repair across Mettupalayam.",
-      "/contact": "Contact FYXO in Mettupalayam for multibrand home appliance repair and service enquiries. Reach out by phone or WhatsApp at 8870657575.",
-    };
-
-    const pageTitles = {
-      "/": "FYXO | Home Appliance Repair & Maintenance",
-      "/services": "Home Appliance Repair Services in Mettupalayam | FYXO",
-      "/about": "About FYXO | Home Appliance Services in Mettupalayam",
-      "/why-us": "Why Choose FYXO | Multibrand Appliance Care Mettupalayam",
-      "/contact": "Contact FYXO | Appliance Repair Services in Mettupalayam",
-    };
-
-    const canonicalUrls = {
-      "/": "https://homeappliancemaintenace.vercel.app/",
-      "/services": "https://homeappliancemaintenace.vercel.app/services",
-      "/about": "https://homeappliancemaintenace.vercel.app/about",
-      "/why-us": "https://homeappliancemaintenace.vercel.app/why-us",
-      "/contact": "https://homeappliancemaintenace.vercel.app/contact",
-    };
-
     const normalized =
       currentPath.length > 1 && currentPath.endsWith("/")
         ? currentPath.slice(0, -1)
         : currentPath;
 
-    const pageTitle = pageTitles[normalized] || "Page Not Found | FYXO";
+    const routeMeta = routesMetadata[normalized];
+    const pageTitle = routeMeta ? routeMeta.title : "Page Not Found | FYXO";
     document.title = pageTitle;
 
-    const descContent =
-      metaDescriptions[normalized] ||
-      "Page not found. Return to FYXO for home appliance repair and maintenance services.";
+    const descContent = routeMeta
+      ? routeMeta.description
+      : "Page not found. Return to FYXO for home appliance repair and maintenance services.";
 
     const updateMetaTag = (attribute, name, content) => {
       let tag = document.querySelector(`meta[${attribute}="${name}"]`);
@@ -279,12 +257,14 @@ export default function App() {
     updateMetaTag("name", "twitter:description", descContent);
 
     // Absolute social share image
-    const socialImage = "https://homeappliancemaintenace.vercel.app/assets/washing-machine-hero.webp";
+    const socialImage = routeMeta
+      ? routeMeta.ogImage
+      : "https://homeappliancemaintenace.vercel.app/assets/washing-machine-hero.webp";
     updateMetaTag("property", "og:image", socialImage);
     updateMetaTag("name", "twitter:image", socialImage);
 
     // Canonical & og:url management
-    const canonicalUrl = canonicalUrls[normalized];
+    const canonicalUrl = routeMeta ? routeMeta.canonical : null;
     let canonicalLink = document.querySelector('link[rel="canonical"]');
 
     if (canonicalUrl) {
