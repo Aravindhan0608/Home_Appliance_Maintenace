@@ -7,7 +7,7 @@ const services = [
     title: "Washing Machine Repair & Service",
     description:
       "Diagnosis and repair for front load, top load, and semi-automatic units, resolving drum spinning, drainage, motor, and vibration issues.",
-    image: "/assets/appliances/washing-machine.png",
+    image: "/assets/appliances/Luxury-Washing-Machines-1.jpg",
     alt: "Washing machine repair service",
   },
   {
