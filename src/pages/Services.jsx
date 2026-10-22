@@ -35,14 +35,6 @@ const services = [
     alt: "Microwave oven repair service",
   },
   {
-    id: "dishwasher",
-    title: "Dishwasher Repair & Service",
-    description:
-      "Water circulation fixes, wash pump servicing, drainage clearing, and spray arm adjustments to restore sparkling clean cycles.",
-    image: "/assets/appliances/dishwasher.png",
-    alt: "Dishwasher repair service",
-  },
-  {
     id: "tv",
     title: "Television (TV) Repair",
     description:
@@ -134,7 +126,7 @@ const faqs = [
   {
     question: "Which home appliance services are available?",
     answer:
-      "We provide comprehensive repair, preventive maintenance, and servicing for washing machines, refrigerators, air conditioners (AC), microwave ovens, dishwashers, and TVs.",
+      "We provide comprehensive repair, preventive maintenance, and servicing for washing machines, refrigerators, air conditioners (AC), microwave ovens, and TVs.",
   },
   {
     question: "How can I request an appliance service?",
@@ -197,7 +189,7 @@ export default function Services() {
             <div className="my-4 h-[3px] w-12 bg-[#eeb52a]" />
 
             <p className="max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-              Comprehensive home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and televisions.
+              Comprehensive home appliance repair, preventive maintenance, installation, and doorstep servicing across washing machines, refrigerators, air conditioners, microwaves, and televisions.
             </p>
 
             {/* Quick scope tags */}

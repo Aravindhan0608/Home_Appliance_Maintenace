@@ -15,7 +15,7 @@ const services = [
     title2: "MACHINE",
     description:
       "Expert repair and maintenance for front load, top load, and semi-automatic units.",
-    image: "/assets/appliances/washing-machine.png",
+    image: "/assets/appliances/Luxury-Washing-Machines-1.jpg",
     alt: "Washing machine repair service",
   },
   {
@@ -41,14 +41,6 @@ const services = [
       "Heating fault repairs, magnetron replacements, and touch panel troubleshooting.",
     image: "/assets/appliances/microwave-oven.png",
     alt: "Microwave oven repair service",
-  },
-  {
-    title: "DISHWASHER",
-    title2: "SERVICE",
-    description:
-      "Wash pump repairs, drainage clearing, spray arm fixes, and cycle restoration.",
-    image: "/assets/appliances/dishwasher.png",
-    alt: "Dishwasher repair service",
   },
   {
     title: "TELEVISION",
@@ -236,7 +228,7 @@ export default function App() {
 
     const metaDescriptions = {
       "/": "FYXO provides multibrand home appliance repair and maintenance services in Mettupalayam and nearby areas including Sirumugai, Karamadai, Annur and Periyanaikanpalayam.",
-      "/services": "Explore multibrand home appliance repair and doorstep maintenance services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, dishwashers, and TVs.",
+      "/services": "Explore multibrand home appliance repair and doorstep maintenance services in Mettupalayam for washing machines, fridges, ACs, microwave ovens, and TVs.",
       "/about": "Learn about FYXO, a dedicated multibrand home appliance repair and doorstep maintenance service serving Mettupalayam and nearby areas in Tamil Nadu.",
       "/why-us": "Discover why households choose FYXO for multibrand appliance care, honest diagnostics, and doorstep repair across Mettupalayam.",
       "/contact": "Contact FYXO in Mettupalayam for multibrand home appliance repair and service enquiries. Reach out by phone or WhatsApp at 8870657575.",

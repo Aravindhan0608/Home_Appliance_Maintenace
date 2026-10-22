@@ -13,7 +13,6 @@ const applianceServices = [
   "Refrigerator / Fridge",
   "Air Conditioner (AC)",
   "Microwave Oven",
-  "Dishwasher",
   "TV",
 ];
 

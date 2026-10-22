@@ -185,7 +185,7 @@ export default function About() {
 
             <div className="space-y-4 text-sm leading-7 text-white/80 sm:text-base lg:col-span-7">
               <p>
-                At FYXO, we specialize in comprehensive home appliance solutions across washing machines, refrigerators, air conditioners, microwaves, dishwashers, and more. When an essential appliance stops functioning, it disrupts everyday life.
+                At FYXO, we specialize in comprehensive home appliance solutions across washing machines, refrigerators, air conditioners, microwaves, and more. When an essential appliance stops functioning, it disrupts everyday life.
               </p>
               <p>
                 Our customer-focused approach means prioritizing convenience, quick turnarounds, and clear guidance. We bring skilled workmanship and quality replacement parts right to your doorstep so you never have to deal with the hassle of moving heavy appliances.
